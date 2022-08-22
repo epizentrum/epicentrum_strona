@@ -811,24 +811,8 @@ video {
   --tw-gradient-to: #000;
 }
 
-.bg-\[length\:4px_0\%\] {
-  background-size: 4px 0%;
-}
-
-.bg-\[length\:0\%_4px\] {
-  background-size: 0% 4px;
-}
-
-.bg-\[length\:0\%_3px\] {
-  background-size: 0% 3px;
-}
-
-.bg-\[length\:100\%_3px\] {
-  background-size: 100% 3px;
-}
-
-.bg-\[length\:4px_100\%\] {
-  background-size: 4px 100%;
+.to-pablo-blue {
+  --tw-gradient-to: #4361ee;
 }
 
 .bg-\[length\:100\%_4px\] {
@@ -867,40 +851,12 @@ video {
   padding: 1.5rem;
 }
 
+.p-10 {
+  padding: 2.5rem;
+}
+
 .p-4 {
   padding: 1rem;
-}
-
-.pr-3 {
-  padding-right: 0.75rem;
-}
-
-.pb-2 {
-  padding-bottom: 0.5rem;
-}
-
-.pt-20 {
-  padding-top: 5rem;
-}
-
-.pt-14 {
-  padding-top: 3.5rem;
-}
-
-.pl-8 {
-  padding-left: 2rem;
-}
-
-.pb-20 {
-  padding-bottom: 5rem;
-}
-
-.pr-40 {
-  padding-right: 10rem;
-}
-
-.pt-96 {
-  padding-top: 24rem;
 }
 
 .text-center {
