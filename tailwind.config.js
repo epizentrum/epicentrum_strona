@@ -18,6 +18,10 @@ module.exports = {
 				}
 			
 		},
+		container:{
+			center: true,
+			padding: "4rem",
+		},
 		
 	},
 	plugins: [],
