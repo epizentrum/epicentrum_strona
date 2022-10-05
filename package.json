@@ -1,8 +1,10 @@
 {
+	"homepage": "https://epizentrum.github.io/epicentrum_strona/",
 	"devDependencies": {
 		"tailwindcss": "^3.1.7"
 	},
 	"scripts": {
 		"build-css": "npx tailwindcss -i ./src/main.css -o ./public/main.css --watch"
+
 	}
 }
