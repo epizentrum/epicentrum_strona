@@ -1119,12 +1119,6 @@ video {
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
-.from-black {
-  --tw-gradient-from: #000;
-  --tw-gradient-to: rgb(0 0 0 / 0);
-  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
-}
-
 .from-indigo-500 {
   --tw-gradient-from: #6366f1;
   --tw-gradient-to: rgb(99 102 241 / 0);
@@ -1163,10 +1157,6 @@ video {
 
 .to-pink-500 {
   --tw-gradient-to: #ec4899;
-}
-
-.to-\[\#171717\] {
-  --tw-gradient-to: #171717;
 }
 
 .bg-\[length\:0\%_3px\] {
