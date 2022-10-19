@@ -20,11 +20,10 @@
 
 2. Skopiuj repozytorium do siebie za pomocą forka.
 
-3. Sklonuj sforkowane repozytorium na dysk lokalny, wpisując w wiersz poleceń  ```git clone ``` 
- ```https://github.com/{twoja_nazwa_uzytkownika}/epicentrum_strona.git.```
+3. Sklonuj sforkowane repozytorium na dysk lokalny, wpisując w wiersz poleceń  ```git clone https://github.com/{twoja_nazwa_uzytkownika}/epicentrum_strona.git.```
 
 4. Przeniósłwszy się do folderu, do którego sklonowano repo (```cd {ścieżka_do_pliku}```) wrzuć do wiersza poleceń ``` npm install```, aby zainstalować wszelkie potrzebne do pracy z repozytorium moduły
 
 5. By uruchomić kompilację tailwindcss na bieżąco, wpisz do wiersza poleceń ``` npm run build-css ```. Tailwind kompilować się będzie za każdym razem, kiedy zapisany zostanie jakikolwiek plik.
 
-
+6. Miłej zabawy!
