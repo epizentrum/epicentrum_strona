@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.1.7 | MIT License | https://tailwindcss.com
+! tailwindcss v3.2.1 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -355,13 +355,6 @@ input::-moz-placeholder, textarea::-moz-placeholder {
   /* 2 */
 }
 
-input:-ms-input-placeholder, textarea:-ms-input-placeholder {
-  opacity: 1;
-  /* 1 */
-  color: #9ca3af;
-  /* 2 */
-}
-
 input::placeholder,
 textarea::placeholder {
   opacity: 1;
@@ -415,6 +408,12 @@ img,
 video {
   max-width: 100%;
   height: auto;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+
+[hidden] {
+  display: none;
 }
 
 *, ::before, ::after {
@@ -947,6 +946,35 @@ video {
 .animate-slideRightMobile {
   -webkit-animation: slideRightMobile 1s ease-in-out;
           animation: slideRightMobile 1s ease-in-out;
+}
+
+@-webkit-keyframes slideLeftMobile {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+
+  100%: {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeftMobile {
+  0% {
+    transform: translateX(100px);
+    opacity: 0;
+  }
+
+  100%: {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
+
+.animate-slideLeftMobile {
+  -webkit-animation: slideLeftMobile 1s ease-in-out;
+          animation: slideLeftMobile 1s ease-in-out;
 }
 
 .cursor-pointer {
@@ -1564,6 +1592,35 @@ body {
   .sm\:animate-slideRight {
     -webkit-animation: slideRight 1s ease-in-out;
             animation: slideRight 1s ease-in-out;
+  }
+
+  @-webkit-keyframes slideLeft {
+    0% {
+      transform: translateX(50px);
+      opacity: 0;
+    }
+
+    100%: {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideLeft {
+    0% {
+      transform: translateX(50px);
+      opacity: 0;
+    }
+
+    100%: {
+      transform: translateX(0px);
+      opacity: 1;
+    }
+  }
+
+  .sm\:animate-slideLeft {
+    -webkit-animation: slideLeft 1s ease-in-out;
+            animation: slideLeft 1s ease-in-out;
   }
 
   .sm\:flex-col {
