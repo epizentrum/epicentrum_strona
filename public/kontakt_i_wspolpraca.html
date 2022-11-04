@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kontakt i współpraca | KN Epicentrum</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+    <link rel="manifest" href="fav/site.webmanifest">
     <link rel="stylesheet" href="../public/main.css" />
     <link
       rel="shortcut icon"
@@ -42,21 +46,21 @@
   >
     <!--navbar-->
     <nav
-      class="fixed z-50 w-screen md:p-5 md:pb-6 bg-zinc-900/0 md:bg-zinc-900 md:flex md:items-center md:justify-between md:bg-left-bottom md:bg-gradient-to-r from-cyan-500 to-cyan-500 bg-[length:0%_3px] bg-no-repeat transition-all duration-500 ease-in-out"
+      class="fixed z-40 w-screen md:p-5 md:pb-6 bg-zinc-900 md:bg-zinc-900 md:flex md:items-center md:justify-between bg-left-bottom bg-gradient-to-r from-cyan-500 to-cyan-500 bg-[length:0%_3px] bg-no-repeat transition-all duration-500 ease-in-out"
       :class="{'bg-[length:0%_3px]': !scrolledFromTop, 'bg-[length:100%_3px]': scrolledFromTop}"
     >
       <div class="flex justify-between mx-2 items-center">
-        <img
-          class="h-16 4k:h-44 duration-500 transition-all ease-in-out"
+        <a href="index.html"><img
+          class="h-12 sm:h-16 4k:h-44 duration-500 transition-all ease-in-out"
           src="img/epicenrtum_logo_biale.svg"
           alt="logo"
           :class="{'opacity-0': !scrolledFromTop}"
         />
-
+        </a>
         <span
           class="text-6xl text-white cursor-pointer flex-wrap md:hidden z-10"
         >
-          <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+          <ion-icon class="pt-3" name="menu" onclick="Menu(this)"></ion-icon>
         </span>
       </div>
 
@@ -64,7 +68,7 @@
         class="md:flex md:items-center text-white font-bold md:z-auto md:static absolute bg-zinc-900 md:bg-zinc-900/0 top-0 pt-20 md:pt-6 md:pb-0 md:pl-0 space-y-16 md:space-y-0 md:opacity-100 opacity-0 right-[-400px] transition-all ease-in duration-300 md:duration-0 md:transition-none bg-left-bottom bg-gradient-to-t from-pablo-sea to-pablo-blue bg-[length:4px_100%] bg-no-repeat md:bg-[length:4px_0%]"
       >
         <li class="md:mx-4 md:pl-6 md:my-0 md:pr-0 md:pt-0 pt-14 pl-8">
-          <a href="#" class="text-xl 4k:text-6xl">
+          <a href="dla_studentow.html" class="text-xl 4k:text-6xl">
             <span
               class="bg-left-bottom bg-gradient-to-l from-pablo-sea to-pablo-blue bg-[length:0%_4px] bg-no-repeat hover:bg-[length:100%_4px] pb-2 transition-all duration-[300ms] hover:delay-[0ms] delay-[180ms] ease-out md:ml-0 md:bg-right-bottom md:bg-gradient-to-r"
             >
@@ -77,7 +81,7 @@
           </a>
         </li>
         <li class="md:mx-4 md:pl-6 md:my-0 md:pr-0 pl-8">
-          <a href="#" class="text-xl 4k:text-6xl">
+          <a href="dla_firm.html" class="text-xl 4k:text-6xl">
             <span
               class="bg-left-bottom bg-gradient-to-l from-pablo-sea to-pablo-blue bg-[length:0%_4px] bg-no-repeat hover:bg-[length:100%_4px] pb-2 transition-all duration-[300ms] hover:delay-[0ms] delay-[180ms] ease-out md:ml-0 md:bg-right-bottom md:bg-gradient-to-r"
             >
@@ -92,7 +96,7 @@
         <li
           class="md:mx-4 md:pl-6 md:my-0 md:pr-0 md:pb-0 pb-20 pr-40 4k:pr-40 pl-8 bg-left-bottom bg-gradient-to-r from-pablo-sea to-pablo-blue bg-[length:100%_4px] bg-no-repeat md:bg-[length:0%_4px]"
         >
-          <a href="#" class="text-xl 4k:text-6xl">
+          <a href="kontakt_i_wspolpraca.html" class="text-xl 4k:text-6xl">
             <span
               class="bg-left-bottom bg-gradient-to-l from-pablo-sea to-pablo-blue bg-[length:0%_4px] bg-no-repeat hover:bg-[length:100%_4px] pb-2 transition-all duration-[300ms] hover:delay-[0ms] delay-[180ms] ease-out md:ml-0 md:bg-right-bottom md:bg-gradient-to-r"
             >
@@ -114,7 +118,7 @@
         <h1 class="text-[32px] font-extrabold text-[#FFFFFF] md: pt-20">
           HEADER 1
         </h1>
-        <div class="h-1 bg-gradient-to-r from-[#f72585] to-[#4361ee]"></div>
+        <div class="h-1 bg-gradient-to-r from-pablo-sea to-pablo-blue"></div>
       </div>
     </div>
     <div
