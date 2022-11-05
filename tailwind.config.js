@@ -35,7 +35,7 @@ module.exports = {
         "100%:": { transform: "translateX(0px)", opacity: "1" },
       },
       slideRight: {
-        "0%": { transform: "translateX(-500px)", opacity: "0" },
+        "0%": { transform: "translateX(-300px)", opacity: "0" },
         "100%:": { transform: "translateX(0px)", opacity: "1" },
       },
       slideRightMobile: {
@@ -43,7 +43,7 @@ module.exports = {
         "100%:": { transform: "translateX(0px)", opacity: "1" },
       },
       slideLeftMobile: {
-        "0%": { transform: "translateX(100px)", opacity: "0" },
+        "0%": { transform: "translateX(50px)", opacity: "0" },
         "100%:": { transform: "translateX(0px)", opacity: "1" },
       },
       fadeIn: {
