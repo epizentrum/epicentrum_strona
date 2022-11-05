@@ -5,10 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kontakt i współpraca | KN Epicentrum</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
-    <link rel="manifest" href="fav/site.webmanifest">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="fav/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="fav/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="fav/favicon-16x16.png"
+    />
+    <link rel="manifest" href="fav/site.webmanifest" />
     <link rel="stylesheet" href="../public/main.css" />
     <link
       rel="shortcut icon"
@@ -50,12 +64,13 @@
       :class="{'bg-[length:0%_3px]': !scrolledFromTop, 'bg-[length:100%_3px]': scrolledFromTop}"
     >
       <div class="flex justify-between mx-2 items-center">
-        <a href="index.html"><img
-          class="h-12 sm:h-16 4k:h-44 duration-500 transition-all ease-in-out"
-          src="img/epicenrtum_logo_biale.svg"
-          alt="logo"
-          :class="{'opacity-0': !scrolledFromTop}"
-        />
+        <a href="index.html"
+          ><img
+            class="h-12 sm:h-16 4k:h-44 duration-500 transition-all ease-in-out"
+            src="img/epicenrtum_logo_biale.svg"
+            alt="logo"
+            :class="{'opacity-0': !scrolledFromTop}"
+          />
         </a>
         <span
           class="text-6xl text-white cursor-pointer flex-wrap md:hidden z-10"
@@ -124,69 +139,75 @@
     <div
       class="flex justify-center flex-wrap gap-5 text-white sm:pt-20 sm:animate-fadeInSubsite"
     >
+      <!-- first -->
       <div
-        class="relative w-1/8 bg-gradient-to-t from-[#7209B7] flex sm:flex-col justify-center items-center pt-20 px-5"
+        class="relative w-1/8 sm:w-80 bg-gradient-to-t from-[#7209B7] flex sm:flex-col justify-center items-center pt-20 px-5 sm:max-w-sm sm:text-center"
       >
         <div
-          class="rounded-full bg-gray-400 flex items-center justify-center font-mono h-24 w-24 px-10 animate-fadeIn sm:animate-none"
+          class="sm:-translate-y-10 rounded-full bg-gray-400 flex items-center justify-center font-mono h-24 w-24 px-10 animate-fadeIn sm:animate-none"
         >
           <p>GRAPHIC</p>
         </div>
         <div
-          class="text-[20px] py-20 px-5 sm:px-0 animate-slideLeft sm:animate-none"
+          class="sm:-translate-y-16 text-[20px] py-20 px-5 pl-10 sm:pl-0 sm:px-0 animate-slideLeft sm:animate-none text-ellipsis"
         >
           <p>placeholder text about the topic...</p>
         </div>
-        <div class="absolute -bottom-7">
+        <div class="absolute -bottom-7 pl-20 sm:pl-0">
           <button
-            class="text-[20px] font-extrabold text-[#FFFFFF] bg-[#720987] p-3 opacity-90 hover:opacity-100"
+            class="text-[18px] sm:text-[20px] font-extrabold text-[#FFFFFF] bg-[#720987] p-2 sm:p-3 opacity-90 hover:opacity-100"
           >
             ACTION BUTTON
           </button>
         </div>
       </div>
+      <!--first-->
+      <!-- second -->
       <div
-        class="relative w-1/8 bg-gradient-to-t from-[#7209B7] flex sm:flex-col justify-center items-center pt-20 px-5"
+        class="relative w-1/8 sm:w-80 bg-gradient-to-t from-[#7209B7] flex sm:flex-col justify-center items-center pt-20 px-5 sm:max-w-sm sm:text-center"
       >
         <div
-          class="rounded-full bg-gray-400 flex items-center justify-center font-mono h-24 w-24 px-10 animate-fadeIn sm:animate-none"
+          class="sm:-translate-y-10 rounded-full bg-gray-400 flex items-center justify-center font-mono h-24 w-24 px-10 animate-fadeIn sm:animate-none"
         >
           <p>GRAPHIC</p>
         </div>
         <div
-          class="text-[20px] py-20 px-5 sm:px-0 animate-slideLeft sm:animate-none"
+          class="sm:-translate-y-16 text-[20px] py-20 px-5 pl-10 sm:pl-0 sm:px-0 animate-slideLeft sm:animate-none text-ellipsis"
         >
           <p>placeholder text about the topic...</p>
         </div>
-        <div class="absolute -bottom-7">
+        <div class="absolute -bottom-7 pl-20 sm:pl-0">
           <button
-            class="text-[20px] font-extrabold text-[#FFFFFF] bg-[#720987] p-3 opacity-90 hover:opacity-100"
+            class="text-[18px] sm:text-[20px] font-extrabold text-[#FFFFFF] bg-[#720987] p-2 sm:p-3 opacity-90 hover:opacity-100"
           >
             ACTION BUTTON
           </button>
         </div>
       </div>
+      <!--second-->
+      <!-- third -->
       <div
-        class="relative w-1/8 bg-gradient-to-t from-[#7209B7] flex sm:flex-col justify-center items-center pt-20 px-5"
+        class="relative w-1/8 sm:w-80 bg-gradient-to-t from-[#7209B7] flex sm:flex-col justify-center items-center pt-20 px-5 sm:max-w-sm sm:text-center"
       >
         <div
-          class="rounded-full bg-gray-400 flex items-center justify-center font-mono h-24 w-24 px-10 animate-fadeIn sm:animate-none"
+          class="sm:-translate-y-10 rounded-full bg-gray-400 flex items-center justify-center font-mono h-24 w-24 px-10 animate-fadeIn sm:animate-none"
         >
           <p>GRAPHIC</p>
         </div>
         <div
-          class="text-[20px] py-20 px-5 sm:px-0 animate-slideLeft sm:animate-none"
+          class="sm:-translate-y-16 text-[20px] py-20 px-5 pl-10 sm:pl-0 sm:px-0 animate-slideLeft sm:animate-none text-ellipsis"
         >
           <p>placeholder text about the topic...</p>
         </div>
-        <div class="absolute -bottom-7">
+        <div class="absolute -bottom-7 pl-20 sm:pl-0">
           <button
-            class="text-[20px] font-extrabold text-[#FFFFFF] bg-[#720987] p-3 opacity-90 hover:opacity-100"
+            class="text-[18px] sm:text-[20px] font-extrabold text-[#FFFFFF] bg-[#720987] p-2 sm:p-3 opacity-90 hover:opacity-100"
           >
             ACTION BUTTON
           </button>
         </div>
       </div>
+      <!--third-->
     </div>
 
     <!--headerEND-->
