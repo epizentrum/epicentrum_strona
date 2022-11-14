@@ -13,6 +13,7 @@ module.exports = {
       "4k": "2000px",
     },
     extend: {
+      fontSize: {},
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
