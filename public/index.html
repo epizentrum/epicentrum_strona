@@ -1,362 +1,378 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Strona główna | KN Epicentrum</title>
-    <link
-      rel="apple-touch-icon"
-      sizes="180x180"
-      href="fav/apple-touch-icon.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="fav/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="fav/favicon-16x16.png"
-    />
-    <link rel="manifest" href="fav/site.webmanifest" />
-    <link rel="stylesheet" href="../public/main.css" />
-    <link
-      rel="shortcut icon"
-      href="/public/img/epicenrtum_logo_biale.png"
-      type="image/x-icon"
-    />
-    <link href="./src/main.css" rel="stylesheet" />
-    <script src="./main.js"></script>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Strona główna | KN Epicentrum</title>
+		<link
+			rel="apple-touch-icon"
+			sizes="180x180"
+			href="fav/apple-touch-icon.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="fav/favicon-32x32.png"
+		/>
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="16x16"
+			href="fav/favicon-16x16.png"
+		/>
+		<link rel="manifest" href="fav/site.webmanifest" />
+		<link rel="stylesheet" href="../public/main.css" />
+		<link
+			rel="shortcut icon"
+			href="/public/img/epicenrtum_logo_biale.png"
+			type="image/x-icon"
+		/>
+		<link href="./src/main.css" rel="stylesheet" />
+		<script src="./main.js"></script>
 
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-    <script
-      defer
-      src="https://unpkg.com/alpinejs@3.10.3/dist/cdn.min.js"
-    ></script>
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+		></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+		></script>
+		<script
+			defer
+			src="https://unpkg.com/alpinejs@3.10.3/dist/cdn.min.js"
+		></script>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
-      rel="stylesheet"
-    />
-  </head>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
 
-  <body
-    class="bg-black"
-    x-data="{scrolledFromTop: false}"
-    x-init="window.pageYOffset > 60 ? scrolledFromTop = true : scrolledFromTop = false"
-    @scroll.window="window.pageYOffset > 60 ? scrolledFromTop = true : scrolledFromTop = false"
-  >
-    <!-- LOADING SCREEN -->
-    <div
-      class="w-screen h-screen fixed top-0 left-0 z-50 transition-all duration-500"
-      id="loading-screen"
-    >
-      <div
-        class="bg-black-bg h-screen w-screen flex justify-center items-center"
-      >
-        <div class="container bg-black-bg p-16">
-          -->
-          <!-- LOGO -->
-          <div class="xs:w-3/5 sm:w-1/2 md:w-1/3 mx-auto mb-32">
-            <!--ewelina tutaj wszystko sie dzieje-->
-            <svg
-              viewBox="0 0 517 526"
-              version="1.1"
-              xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink"
-              xml:space="preserve"
-              xmlns:serif="http://www.serif.com/"
-              style="
-                fill-rule: evenodd;
-                clip-rule: evenodd;
-                stroke-linecap: round;
-              "
-            >
-              <g id="LOGO">
-                <!-- UPPER MIDDLE-->
-                <g
-                  transform="matrix(1,0,0,1,0,-252.26)"
-                  class="opacity-0 animate-pulse_2"
-                >
-                  <path
-                    d="M75.666,455.391C77.503,449.485 79.622,443.704 82.008,438.063C91.553,415.498 105.363,395.177 122.429,378.111C156.56,343.98 203.713,322.869 255.796,322.869C307.879,322.869 355.031,343.98 389.163,378.111C393.429,382.378 397.492,386.848 401.336,391.505"
-                    style="
-                      fill: rgb(85, 0, 175);
-                      fill-opacity: 0;
-                      fill-rule: nonzero;
-                      stroke: rgb(85, 0, 175);
-                      stroke-width: 18.34px;
-                    "
-                  />
-                </g>
-                <!-- BOTTOM MIDDLE -->
-                <g
-                  transform="matrix(1,0,0,1,0,237.13)"
-                  class="opacity-0 animate-pulse_2"
-                >
-                  <path
-                    d="M110.256,142.06C114.099,146.718 118.162,151.188 122.429,155.454C141.191,174.216 163.887,189.043 189.174,198.592C209.889,206.415 232.343,210.696 255.796,210.696C307.879,210.696 355.031,189.585 389.163,155.454C406.229,138.388 420.039,118.068 429.583,95.503C431.97,89.861 434.089,84.08 435.926,78.174"
-                    style="
-                      fill: rgb(151, 223, 7);
-                      fill-opacity: 0;
-                      fill-rule: nonzero;
-                      stroke: rgb(85, 0, 175);
-                      stroke-width: 18.34px;
-                    "
-                  />
-                </g>
-                <!-- UPPER INNER-->
-                <g
-                  transform="matrix(1,0,0,1,0,-207.251)"
-                  class="opacity-0 animate-pulse_1"
-                >
-                  <path
-                    d="M141.144,399.89C142.256,398.06 144.225,393.817 145.421,392.046C150.205,384.965 155.652,378.369 161.674,372.347C173.718,360.303 188.059,350.557 203.984,343.821C219.909,337.086 237.417,333.361 255.795,333.361C274.174,333.361 291.682,337.086 307.607,343.821C315.569,347.189 323.136,351.309 330.217,356.094C331.987,357.29 333.727,358.527 335.436,359.805"
-                    style="
-                      fill: rgb(151, 223, 7);
-                      fill-opacity: 0;
-                      fill-rule: nonzero;
-                      stroke: rgb(85, 0, 175);
-                      stroke-width: 22.2px;
-                    "
-                  />
-                </g>
-                <!-- OUTER CIRCLE -->
-                <g
-                  transform="matrix(1,0,0,1,0,-2.4423)"
-                  class="opacity-0 animate-pulse_3"
-                >
-                  <path
-                    d="M18.242,215.16C21.484,199.313 26.267,184.027 32.426,169.465C44.745,140.341 62.57,114.113 84.597,92.086C128.65,48.033 189.509,20.785 256.732,20.785C323.955,20.785 384.815,48.033 428.868,92.086C439.881,103.099 449.844,115.163 458.594,128.114M495.223,313.282C491.981,329.129 487.198,344.415 481.038,358.977C468.72,388.101 450.895,414.329 428.868,436.356C384.815,480.409 323.956,507.657 256.733,507.657C189.51,507.657 128.65,480.409 84.597,436.356C73.584,425.343 63.621,413.279 54.871,400.328"
-                    style="
-                      fill: none;
-                      fill-rule: nonzero;
-                      stroke: rgb(85, 0, 175);
-                      stroke-width: 14.44px;
-                    "
-                  />
-                </g>
-                <g transform="matrix(1,0,0,1,0,209.141)">
-                  <path
-                    d="M190.218,166.651L180.427,160.93L176.867,167.022L173.853,165.26L182.789,149.968L185.804,151.729L182.225,157.853L192.016,163.574L193.796,160.528C195.958,156.829 194.963,153.038 191.264,150.876L180.575,144.629C176.877,142.468 173.054,143.445 170.893,147.144L165.553,156.282C163.373,160.012 164.399,163.822 168.097,165.983L178.786,172.229C182.485,174.391 186.276,173.396 188.456,169.666L190.218,166.651Z"
-                    style="fill: white; fill-rule: nonzero"
-                  />
-                </g>
-                <g transform="matrix(1,0,0,1,0,235.221)">
-                  <path
-                    d="M220.715,153.86L210.503,150.945L209.525,154.372L206.132,153.404L208.099,146.515L218.311,149.43L219.289,146.003L209.077,143.088L210.994,136.372L214.386,137.341L213.408,140.768L223.482,143.643L225.419,136.858L201.74,130.099L194.952,153.881L218.768,160.68L220.715,153.86Z"
-                    style="fill: white; fill-rule: nonzero"
-                  />
-                </g>
-                <g transform="matrix(1,0,0,1,0,245.035)">
-                  <path
-                    d="M255.91,135.449C255.999,131.166 253.285,128.337 249.002,128.248L229.53,127.844L229.018,152.571L240.319,152.805L240.76,131.57L244.323,131.644L243.882,152.879L255.544,153.121L255.91,135.449Z"
-                    style="fill: white; fill-rule: nonzero"
-                  />
-                </g>
-                <g transform="matrix(1,0,0,1,0,237.904)">
-                  <path
-                    d="M279.921,130.266L259.169,134.796L259.914,138.208L265.084,137.079L269.614,157.83L279.99,155.566L275.46,134.814L280.666,133.678L279.921,130.266Z"
-                    style="fill: white; fill-rule: nonzero"
-                  />
-                </g>
-                <g transform="matrix(1,0,0,1,0,222.151)">
-                  <path
-                    d="M313.423,149.305C314.586,148.055 315.246,145.377 313.836,141.909C311.802,136.907 308.025,135.839 302.923,137.913L285.248,145.1L294.564,168.01L304.402,164.01L296.401,144.335L299.669,143.006L304.171,154.077L311.705,161.041L321.943,156.878L313.423,149.305Z"
-                    style="fill: white; fill-rule: nonzero"
-                  />
-                </g>
-                <g transform="matrix(1,0,0,1,0,185.15)">
-                  <path
-                    d="M334.34,153.336L325.6,160.561L339.11,176.904L336.391,179.152L322.881,162.809L313.863,170.264L325.102,183.86C327.855,187.189 331.813,187.514 335.087,184.807L344.66,176.894C347.934,174.187 348.332,170.262 345.58,166.932L334.34,153.336Z"
-                    style="fill: white; fill-rule: nonzero"
-                  />
-                </g>
-                <g transform="matrix(1,0,0,1,0,132.471)">
-                  <path
-                    d="M357.363,217.596L363.221,208.78L345.53,197.025L347.503,194.057L365.193,205.812L371.051,196.997L353.361,185.241L355.333,182.273L365.648,189.127L375.395,190.46L382.787,179.337L355.354,175.933L336.764,203.907L357.363,217.596Z"
-                    style="fill: white; fill-rule: nonzero"
-                  />
-                </g>
-                <g transform="matrix(1,0,0,1,0,33.001)">
-                  <path
-                    d="M210.397,255.498L162.354,265.286L160.996,279.124L145.036,282.376L147.765,254.559L195.809,244.771L197.166,230.933L149.123,240.721L151.783,213.603L167.743,210.351L166.386,224.19L213.778,214.534L216.466,187.137L105.07,209.832L95.649,305.862L207.696,283.035L210.397,255.498Z"
-                    style="fill: white; fill-rule: nonzero"
-                  />
-                </g>
-                <g transform="matrix(1,0,0,1,0,-18.57)">
-                  <path
-                    d="M348.036,242.451C349.874,223.721 341.812,213.171 320.966,217.418L232.859,235.368L223.437,331.399L271.481,321.611L279.572,239.139L295.532,235.888L290.746,284.672L314.849,279.761C334.881,275.68 346.171,261.462 348.036,242.451Z"
-                    style="fill: white; fill-rule: nonzero"
-                  />
-                </g>
-                <g
-                  transform="matrix(-0.979871,0.199633,0.199633,0.979871,702.164,-130.755)"
-                >
-                  <path
-                    d="M345.477,246.869L394.507,246.869L422.909,339.086L373.879,339.086L345.477,246.869Z"
-                    style="fill: white; fill-rule: nonzero"
-                  />
-                </g>
-              </g>
-            </svg>
-          </div>
-          <!-- LOADING BAR -->
-          <div class="w-full bg-loading-gray rounded-full h-4">
-            <div
-              class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 h-4 rounded-full animate-loading_bar"
-              style="width: 0"
-            ></div>
-          </div>
-        </div>
-      </div>
-    </div>
+	<body
+		class="bg-black-bg"
+		x-data="{scrolledFromTop: false}"
+		x-init="window.pageYOffset > 60 ? scrolledFromTop = true : scrolledFromTop = false"
+		@scroll.window="window.pageYOffset > 60 ? scrolledFromTop = true : scrolledFromTop = false"
+	>
+		<!-- LOADING SCREEN -->
+		<div
+			class="w-screen h-screen fixed top-0 left-0 z-50 transition-all duration-500"
+			id="loading-screen"
+		>
+			<div
+				class="bg-black-bg h-screen w-screen flex justify-center items-center"
+			>
+				<div class="container bg-black-bg p-16">
+					-->
+					<!-- LOGO -->
+					<div class="xs:w-3/5 sm:w-1/2 md:w-1/3 mx-auto mb-32">
+						<!--ewelina tutaj wszystko sie dzieje-->
+						<svg
+							viewBox="0 0 517 526"
+							version="1.1"
+							xmlns="http://www.w3.org/2000/svg"
+							xmlns:xlink="http://www.w3.org/1999/xlink"
+							xml:space="preserve"
+							xmlns:serif="http://www.serif.com/"
+							style="
+								fill-rule: evenodd;
+								clip-rule: evenodd;
+								stroke-linecap: round;
+							"
+						>
+							<g id="LOGO">
+								<!-- UPPER MIDDLE-->
+								<g
+									transform="matrix(1,0,0,1,0,-252.26)"
+									class="opacity-0 animate-pulse_2"
+								>
+									<path
+										d="M75.666,455.391C77.503,449.485 79.622,443.704 82.008,438.063C91.553,415.498 105.363,395.177 122.429,378.111C156.56,343.98 203.713,322.869 255.796,322.869C307.879,322.869 355.031,343.98 389.163,378.111C393.429,382.378 397.492,386.848 401.336,391.505"
+										style="
+											fill: rgb(85, 0, 175);
+											fill-opacity: 0;
+											fill-rule: nonzero;
+											stroke: rgb(85, 0, 175);
+											stroke-width: 18.34px;
+										"
+									/>
+								</g>
+								<!-- BOTTOM MIDDLE -->
+								<g
+									transform="matrix(1,0,0,1,0,237.13)"
+									class="opacity-0 animate-pulse_2"
+								>
+									<path
+										d="M110.256,142.06C114.099,146.718 118.162,151.188 122.429,155.454C141.191,174.216 163.887,189.043 189.174,198.592C209.889,206.415 232.343,210.696 255.796,210.696C307.879,210.696 355.031,189.585 389.163,155.454C406.229,138.388 420.039,118.068 429.583,95.503C431.97,89.861 434.089,84.08 435.926,78.174"
+										style="
+											fill: rgb(151, 223, 7);
+											fill-opacity: 0;
+											fill-rule: nonzero;
+											stroke: rgb(85, 0, 175);
+											stroke-width: 18.34px;
+										"
+									/>
+								</g>
+								<!-- UPPER INNER-->
+								<g
+									transform="matrix(1,0,0,1,0,-207.251)"
+									class="opacity-0 animate-pulse_1"
+								>
+									<path
+										d="M141.144,399.89C142.256,398.06 144.225,393.817 145.421,392.046C150.205,384.965 155.652,378.369 161.674,372.347C173.718,360.303 188.059,350.557 203.984,343.821C219.909,337.086 237.417,333.361 255.795,333.361C274.174,333.361 291.682,337.086 307.607,343.821C315.569,347.189 323.136,351.309 330.217,356.094C331.987,357.29 333.727,358.527 335.436,359.805"
+										style="
+											fill: rgb(151, 223, 7);
+											fill-opacity: 0;
+											fill-rule: nonzero;
+											stroke: rgb(85, 0, 175);
+											stroke-width: 22.2px;
+										"
+									/>
+								</g>
+								<!-- OUTER CIRCLE -->
+								<g
+									transform="matrix(1,0,0,1,0,-2.4423)"
+									class="opacity-0 animate-pulse_3"
+								>
+									<path
+										d="M18.242,215.16C21.484,199.313 26.267,184.027 32.426,169.465C44.745,140.341 62.57,114.113 84.597,92.086C128.65,48.033 189.509,20.785 256.732,20.785C323.955,20.785 384.815,48.033 428.868,92.086C439.881,103.099 449.844,115.163 458.594,128.114M495.223,313.282C491.981,329.129 487.198,344.415 481.038,358.977C468.72,388.101 450.895,414.329 428.868,436.356C384.815,480.409 323.956,507.657 256.733,507.657C189.51,507.657 128.65,480.409 84.597,436.356C73.584,425.343 63.621,413.279 54.871,400.328"
+										style="
+											fill: none;
+											fill-rule: nonzero;
+											stroke: rgb(85, 0, 175);
+											stroke-width: 14.44px;
+										"
+									/>
+								</g>
+								<g transform="matrix(1,0,0,1,0,209.141)">
+									<path
+										d="M190.218,166.651L180.427,160.93L176.867,167.022L173.853,165.26L182.789,149.968L185.804,151.729L182.225,157.853L192.016,163.574L193.796,160.528C195.958,156.829 194.963,153.038 191.264,150.876L180.575,144.629C176.877,142.468 173.054,143.445 170.893,147.144L165.553,156.282C163.373,160.012 164.399,163.822 168.097,165.983L178.786,172.229C182.485,174.391 186.276,173.396 188.456,169.666L190.218,166.651Z"
+										style="fill: white; fill-rule: nonzero"
+									/>
+								</g>
+								<g transform="matrix(1,0,0,1,0,235.221)">
+									<path
+										d="M220.715,153.86L210.503,150.945L209.525,154.372L206.132,153.404L208.099,146.515L218.311,149.43L219.289,146.003L209.077,143.088L210.994,136.372L214.386,137.341L213.408,140.768L223.482,143.643L225.419,136.858L201.74,130.099L194.952,153.881L218.768,160.68L220.715,153.86Z"
+										style="fill: white; fill-rule: nonzero"
+									/>
+								</g>
+								<g transform="matrix(1,0,0,1,0,245.035)">
+									<path
+										d="M255.91,135.449C255.999,131.166 253.285,128.337 249.002,128.248L229.53,127.844L229.018,152.571L240.319,152.805L240.76,131.57L244.323,131.644L243.882,152.879L255.544,153.121L255.91,135.449Z"
+										style="fill: white; fill-rule: nonzero"
+									/>
+								</g>
+								<g transform="matrix(1,0,0,1,0,237.904)">
+									<path
+										d="M279.921,130.266L259.169,134.796L259.914,138.208L265.084,137.079L269.614,157.83L279.99,155.566L275.46,134.814L280.666,133.678L279.921,130.266Z"
+										style="fill: white; fill-rule: nonzero"
+									/>
+								</g>
+								<g transform="matrix(1,0,0,1,0,222.151)">
+									<path
+										d="M313.423,149.305C314.586,148.055 315.246,145.377 313.836,141.909C311.802,136.907 308.025,135.839 302.923,137.913L285.248,145.1L294.564,168.01L304.402,164.01L296.401,144.335L299.669,143.006L304.171,154.077L311.705,161.041L321.943,156.878L313.423,149.305Z"
+										style="fill: white; fill-rule: nonzero"
+									/>
+								</g>
+								<g transform="matrix(1,0,0,1,0,185.15)">
+									<path
+										d="M334.34,153.336L325.6,160.561L339.11,176.904L336.391,179.152L322.881,162.809L313.863,170.264L325.102,183.86C327.855,187.189 331.813,187.514 335.087,184.807L344.66,176.894C347.934,174.187 348.332,170.262 345.58,166.932L334.34,153.336Z"
+										style="fill: white; fill-rule: nonzero"
+									/>
+								</g>
+								<g transform="matrix(1,0,0,1,0,132.471)">
+									<path
+										d="M357.363,217.596L363.221,208.78L345.53,197.025L347.503,194.057L365.193,205.812L371.051,196.997L353.361,185.241L355.333,182.273L365.648,189.127L375.395,190.46L382.787,179.337L355.354,175.933L336.764,203.907L357.363,217.596Z"
+										style="fill: white; fill-rule: nonzero"
+									/>
+								</g>
+								<g transform="matrix(1,0,0,1,0,33.001)">
+									<path
+										d="M210.397,255.498L162.354,265.286L160.996,279.124L145.036,282.376L147.765,254.559L195.809,244.771L197.166,230.933L149.123,240.721L151.783,213.603L167.743,210.351L166.386,224.19L213.778,214.534L216.466,187.137L105.07,209.832L95.649,305.862L207.696,283.035L210.397,255.498Z"
+										style="fill: white; fill-rule: nonzero"
+									/>
+								</g>
+								<g transform="matrix(1,0,0,1,0,-18.57)">
+									<path
+										d="M348.036,242.451C349.874,223.721 341.812,213.171 320.966,217.418L232.859,235.368L223.437,331.399L271.481,321.611L279.572,239.139L295.532,235.888L290.746,284.672L314.849,279.761C334.881,275.68 346.171,261.462 348.036,242.451Z"
+										style="fill: white; fill-rule: nonzero"
+									/>
+								</g>
+								<g
+									transform="matrix(-0.979871,0.199633,0.199633,0.979871,702.164,-130.755)"
+								>
+									<path
+										d="M345.477,246.869L394.507,246.869L422.909,339.086L373.879,339.086L345.477,246.869Z"
+										style="fill: white; fill-rule: nonzero"
+									/>
+								</g>
+							</g>
+						</svg>
+					</div>
+					<!-- LOADING BAR -->
+					<div class="w-full bg-loading-gray rounded-full h-4">
+						<div
+							class="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 h-4 rounded-full animate-loading_bar"
+							style="width: 0"
+						></div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    <!-- NAVBAR -->
-   <nav
-   class="fixed z-40 w-screen md:p-3 md:pb-5 bg-zinc-900 md:bg-zinc-900 md:flex md:items-center md:justify-between bg-left-bottom bg-gradient-to-r from-cyan-500 to-cyan-500 bg-[length:0%_3px] bg-no-repeat transition-all duration-500 ease-in-out"
-   :class="{'bg-[length:0%_3px]': !scrolledFromTop, 'bg-[length:100%_3px]': scrolledFromTop}"
- >
-   <div class="flex justify-between mx-2 items-center">
-     <a href="index.html"
-       ><img
-         class="h-12 sm:h-16 4k:h-44 duration-500 transition-all ease-in-out"
-         src="img/epicentrum_logo2.svg"
-         alt="logo"
-         :class="{'opacity-0': !scrolledFromTop}"
+		<!-- NAVBAR -->
+		<nav
+			class="fixed z-40 w-screen md:p-3 md:pb-5 bg-zinc-900 md:bg-zinc-900 md:flex md:items-center md:justify-between bg-left-bottom bg-gradient-to-r from-cyan-500 to-cyan-500 bg-[length:0%_3px] bg-no-repeat transition-all duration-500 ease-in-out"
+			:class="{'bg-[length:0%_3px]': !scrolledFromTop, 'bg-[length:100%_3px]': scrolledFromTop}"
+		>
+			<div class="flex justify-between mx-2 items-center">
+				<a href="index.html"
+					><img
+						class="h-12 sm:h-16 4k:h-44 duration-500 transition-all ease-in-out"
+						src="img/epicentrum_logo2.svg"
+						alt="logo"
+						:class="{'opacity-0': !scrolledFromTop}"
+					/>
+				</a>
+				<div class="flex flex-col justify-center md:opacity-0">
+					<div class="relative py-3 sm:max-w-xl mx-auto">
+						<div x-data="{ open: false }">
+							<button
+								class="w-14 h-14 relative focus:outline-none z-10 space-y-4"
+								@click="open = !open"
+								name="menu"
+								onclick="Menu(this)"
+							>
+								<div
+									class="block w-5 absolute left-6 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
+								>
+									<span
+										class="block absolute rounded-md h-1 w-9 text-white bg-current transform transition duration-500 ease-in-out"
+										:class="{'rotate-45': open,' -translate-y-3': !open }"
+									></span>
+									<span
+										class="block absolute rounded-md h-1 w-9 text-white bg-current transform transition duration-500 ease-in-out"
+										:class="{'opacity-0': open } "
+									></span>
+									<span
+										class="block absolute rounded-md h-1 w-9 text-white bg-current transform transition duration-500 ease-in-out"
+										:class="{'-rotate-45': open, ' translate-y-3': !open}"
+									></span>
+								</div>
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
 
-       />
-     </a>
-     <div class="flex flex-col justify-center md:opacity-0">
-       <div class="relative py-3 sm:max-w-xl mx-auto">
-           <div x-data="{ open: false }">
-               <button class="w-14 h-14 relative focus:outline-none  z-10 space-y-4" @click="open = !open" name="menu" onclick="Menu(this)">
-                  
-                   <div class="block w-5 absolute left-6 top-1/2   transform  -translate-x-1/2 -translate-y-1/2 " >
-                       <span  class="block absolute rounded-md h-1 w-9 text-white bg-current transform transition duration-500 ease-in-out" :class="{'rotate-45': open,' -translate-y-3': !open }"></span>
-                       <span  class="block absolute rounded-md h-1 w-9 text-white bg-current transform transition duration-500 ease-in-out" :class="{'opacity-0': open } "></span>
-                       <span  class="block absolute rounded-md h-1 w-9 text-white bg-current transform  transition duration-500 ease-in-out" :class="{'-rotate-45': open, ' translate-y-3': !open}"></span>
-                   </div>
-               </button>
-             </div>
-       </div>
-   </div>
-   </div>
+			<ul
+				class="md:flex md:items-center text-white font-bold md:z-auto md:static absolute bg-zinc-900 md:bg-zinc-900/0 top-0 pt-20 md:pt-6 md:pb-0 md:pl-0 space-y-16 md:space-y-0 md:opacity-100 opacity-0 right-[-400px] transition-all ease-in duration-300 md:duration-0 md:transition-none bg-left-bottom bg-gradient-to-t from-pablo-sea to-pablo-blue bg-[length:4px_100%] bg-no-repeat md:bg-[length:4px_0%]"
+			>
+				<li class="md:mx-4 md:pl-6 md:my-0 md:pr-0 md:pt-0 pt-14 pl-8 group">
+					<a href="dla_studentow.html" class="text-xl 4k:text-6xl">
+						<span
+							class="bg-left-bottom bg-gradient-to-l from-pablo-sea to-pablo-blue bg-[length:0%_4px] bg-no-repeat group-hover:bg-[length:100%_4px] pb-1.5 transition-all duration-[300ms] group-hover:delay-[0ms] delay-[180ms] ease-out md:ml-0 md:bg-right-bottom md:bg-gradient-to-r"
+						>
+							<span
+								class="inline-table pr-3 bg-right-bottom bg-gradient-to-t from-pablo-sea to-pablo-blue bg-[length:4px_0%] bg-no-repeat group-hover:bg-[length:4px_100%] transition-all duration-[250ms] group-hover:delay-[260ms] ease-out md:pr-0 md:pl-3 md:bg-left-bottom truncate"
+							>
+								<div
+									class="absolute ml-1 mt-1.5 md:mt-1.5 h-5 w-5 bg-gradient-to-t from-pablo-sea to-pablo-blue blur opacity-0 group-hover:opacity-100 transition-all duration-500 ease-out"
+								></div>
+								<img
+									class="relative inline h-7"
+									src="img/svgnav/heroicons-email-small.svg"
+									alt="info"
+								/>
 
-   <ul
-     class="md:flex md:items-center text-white font-bold md:z-auto md:static absolute bg-zinc-900 md:bg-zinc-900/0 top-0 pt-20 md:pt-6 md:pb-0 md:pl-0 space-y-16 md:space-y-0 md:opacity-100 opacity-0 right-[-400px] transition-all ease-in duration-300 md:duration-0 md:transition-none bg-left-bottom bg-gradient-to-t from-pablo-sea to-pablo-blue bg-[length:4px_100%] bg-no-repeat md:bg-[length:4px_0%]"
-   >
-     <li class="md:mx-4 md:pl-6 md:my-0 md:pr-0 md:pt-0 pt-14 pl-8 group">
-       <a href="dla_studentow.html" class="text-xl 4k:text-6xl">
-         <span
-           class="bg-left-bottom bg-gradient-to-l from-pablo-sea to-pablo-blue bg-[length:0%_4px] bg-no-repeat group-hover:bg-[length:100%_4px] pb-1.5 transition-all duration-[300ms] group-hover:delay-[0ms] delay-[180ms] ease-out md:ml-0 md:bg-right-bottom md:bg-gradient-to-r"
-         >
-           <span
-             class="inline-table pr-3 bg-right-bottom bg-gradient-to-t from-pablo-sea to-pablo-blue bg-[length:4px_0%] bg-no-repeat group-hover:bg-[length:4px_100%] transition-all duration-[250ms] group-hover:delay-[260ms] ease-out md:pr-0 md:pl-3 md:bg-left-bottom truncate"
-           >
-             <div
-               class="absolute ml-1 mt-1.5 md:mt-1.5 h-5 w-5 bg-gradient-to-t from-pablo-sea to-pablo-blue blur opacity-0 group-hover:opacity-100 transition-all duration-500 ease-out"
-             ></div>
-             <img
-               class="relative inline h-7"
-               src="img/svgnav/heroicons-email-small.svg"
-               alt="info"
-             />
+								DLA STUDENTOW
+							</span>
+						</span>
+					</a>
+				</li>
+				<li class="md:mx-4 md:pl-6 md:my-0 md:pr-0 pl-8 group">
+					<a href="dla_firm.html" class="text-xl 4k:text-6xl">
+						<span
+							class="bg-left-bottom bg-gradient-to-l from-pablo-sea to-pablo-blue bg-[length:0%_4px] bg-no-repeat group-hover:bg-[length:100%_4px] pb-1 transition-all duration-[300ms] group-hover:delay-[0ms] delay-[180ms] ease-out md:ml-0 md:bg-right-bottom md:bg-gradient-to-r"
+						>
+							<span
+								class="inline-table mt-0.5 pr-3 bg-right-bottom bg-gradient-to-t from-pablo-sea to-pablo-blue bg-[length:4px_0%] bg-no-repeat group-hover:bg-[length:4px_100%] transition-all duration-[250ms] group-hover:delay-[260ms] ease-out md:pr-0 md:pl-3 md:bg-left-bottom truncate"
+							>
+								<div
+									class="absolute ml-1 mt-1.5 md:mt-1.5 h-5 w-5 bg-gradient-to-t from-pablo-sea to-pablo-blue blur opacity-0 group-hover:opacity-100 transition-all duration-500 ease-out"
+								></div>
+								<img
+									class="relative inline h-7"
+									src="img/svgnav/heroicons-email-small.svg"
+									alt="info"
+								/>
 
-             DLA STUDENTOW
-           </span>
-         </span>
-       </a>
-     </li>
-     <li class="md:mx-4 md:pl-6 md:my-0 md:pr-0 pl-8 group">
-      <a href="dla_firm.html" class="text-xl 4k:text-6xl">
-        <span
-          class="bg-left-bottom bg-gradient-to-l from-pablo-sea to-pablo-blue bg-[length:0%_4px] bg-no-repeat group-hover:bg-[length:100%_4px] pb-1 transition-all duration-[300ms] group-hover:delay-[0ms] delay-[180ms] ease-out md:ml-0 md:bg-right-bottom md:bg-gradient-to-r"
-        >
-          <span
-            class="inline-table mt-0.5 pr-3 bg-right-bottom bg-gradient-to-t from-pablo-sea to-pablo-blue bg-[length:4px_0%] bg-no-repeat group-hover:bg-[length:4px_100%] transition-all duration-[250ms] group-hover:delay-[260ms] ease-out md:pr-0 md:pl-3 md:bg-left-bottom truncate"
-          >
-            <div
-              class="absolute ml-1 mt-1.5 md:mt-1.5 h-5 w-5 bg-gradient-to-t from-pablo-sea to-pablo-blue blur opacity-0 group-hover:opacity-100 transition-all duration-500 ease-out"
-            ></div>
-            <img
-              class="relative inline h-7"
-              src="img/svgnav/heroicons-email-small.svg"
-              alt="info"
-            />
+								DLA FIRM
+							</span>
+						</span>
+					</a>
+				</li>
+				<li
+					class="md:mx-4 md:pl-6 md:my-0 md:pr-0 md:pb-0 pb-20 pr-40 4k:pr-40 pl-8 bg-left-bottom bg-gradient-to-r from-pablo-sea to-pablo-blue bg-[length:100%_4px] bg-no-repeat md:bg-[length:0%_4px] group"
+				>
+					<a href="kontakt_i_wspolpraca.html" class="text-xl 4k:text-6xl">
+						<span
+							class="bg-left-bottom bg-gradient-to-l from-pablo-sea to-pablo-blue bg-[length:0%_4px] bg-no-repeat group-hover:bg-[length:100%_4px] pb-1.5 transition-all duration-[300ms] group-hover:delay-[0ms] delay-[180ms] ease-out md:ml-0 md:bg-right-bottom md:bg-gradient-to-r"
+						>
+							<span
+								class="inline-table pr-3 bg-right-bottom bg-gradient-to-t from-pablo-sea to-pablo-blue bg-[length:4px_0%] bg-no-repeat group-hover:bg-[length:4px_100%] transition-all duration-[250ms] group-hover:delay-[260ms] ease-out md:pr-0 md:pl-3 md:bg-left-bottom truncate"
+							>
+								<div
+									class="absolute ml-1 mt-1.5 md:mt-1.5 h-5 w-5 bg-gradient-to-t from-pablo-sea to-pablo-blue blur opacity-0 group-hover:opacity-100 transition-all duration-500 ease-out"
+								></div>
+								<img
+									class="relative inline h-7"
+									src="img/svgnav/heroicons-email-small.svg"
+									alt="info"
+								/>
 
-            DLA FIRM
-          </span>
-        </span>
-      </a>
-    </li>
-    <li class="md:mx-4 md:pl-6 md:my-0 md:pr-0 md:pb-0 pb-20 pr-40 4k:pr-40 pl-8 bg-left-bottom bg-gradient-to-r from-pablo-sea to-pablo-blue bg-[length:100%_4px] bg-no-repeat md:bg-[length:0%_4px] group">
-      <a href="kontakt_i_wspolpraca.html" class="text-xl 4k:text-6xl">
-        <span
-          class="bg-left-bottom bg-gradient-to-l from-pablo-sea to-pablo-blue bg-[length:0%_4px] bg-no-repeat group-hover:bg-[length:100%_4px] pb-1.5 transition-all duration-[300ms] group-hover:delay-[0ms] delay-[180ms] ease-out md:ml-0 md:bg-right-bottom md:bg-gradient-to-r"
-        >
-          <span
-            class="inline-table pr-3 bg-right-bottom bg-gradient-to-t from-pablo-sea to-pablo-blue bg-[length:4px_0%] bg-no-repeat group-hover:bg-[length:4px_100%] transition-all duration-[250ms] group-hover:delay-[260ms] ease-out md:pr-0 md:pl-3 md:bg-left-bottom truncate"
-          >
-            <div
-              class="absolute ml-1 mt-1.5 md:mt-1.5 h-5 w-5 bg-gradient-to-t from-pablo-sea to-pablo-blue blur opacity-0 group-hover:opacity-100 transition-all duration-500 ease-out"
-            ></div>
-            <img
-              class="relative inline h-7"
-              src="img/svgnav/heroicons-email-small.svg"
-              alt="info"
-            />
+								KONTAKT
+							</span>
+						</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+		<!--navbarEnd-->
 
-            KONTAKT
-          </span>
-        </span>
-      </a>
-    </li>
-   </ul>
- </nav>
- <!--navbarEnd-->
-    <!--header-->
-
-    <div
-      class="flex justify-center items-center flex-row flex-nowrap md:flex-wrap md:flex-nowrap gap-5 w-full pt-20 4k:pt-56 px-2"
-    >
-      <div class="md:pt-20 translate-y-5 sm:translate-y-0">
-        <h1
-          class="text-[22px] 4k:text-6xl sm:text-[32px] font-extrabold text-[#FFFFFF] animate-slideRightMobile sm:animate-slideRight"
-        >
-          KOŁO NAUKOWE
-        </h1>
-        <h3
-          class="text-[14px] 4k:text-4xl sm:text-[24px] font-extrabold text-[#FFFFFF] flex justify-end animate-slideLeftMobile sm:animate-slideLeft"
-        >
-          Dolor Sit Amet
-        </h3>
-        <div
-          class="h-1 bg-gradient-to-r from-pablo-sea to-pablo-blue mt-2 sm:mt-4 animate-fadeIn"
-        ></div>
-      </div>
-      <div class="md:pt-20">
-        <embed
-          src="../public/img/epicentrum_logo2.svg"
-          type=""
-          class="xxs:w-44 md:w-80 4k:w-100 sm:-translate-y-7"
-        />
-      </div>
-    </div>
-    <!-- <div class="flex justify-center place-self-center mt-5 pb-10">
+		<!--header-->
+		<div
+			class="flex justify-center items-center flex-row flex-nowrap md:flex-wrap md:flex-nowrap gap-5 w-full pt-20 4k:pt-56 px-2 bg-gradient-to-b from-pablo-pink-main to-transparent"
+		>
+			<div class="md:pt-20 translate-y-5 sm:translate-y-0">
+				<h1
+					class="text-[22px] 4k:text-6xl sm:text-[32px] font-extrabold text-[#FFFFFF] animate-slideRightMobile sm:animate-slideRight"
+				>
+					KOŁO NAUKOWE
+				</h1>
+				<h3
+					class="text-[14px] 4k:text-4xl sm:text-[24px] font-extrabold text-[#FFFFFF] flex justify-end animate-slideLeftMobile sm:animate-slideLeft"
+				>
+					Dolor Sit Amet
+				</h3>
+				<div
+					class="h-1 bg-gradient-to-r from-pablo-sea to-pablo-blue mt-2 sm:mt-4 animate-fadeIn"
+				></div>
+			</div>
+			<div class="md:pt-20">
+				<embed
+					src="../public/img/epicentrum_logo2.svg"
+					type=""
+					class="xxs:w-44 md:w-80 4k:w-100 sm:-translate-y-7"
+				/>
+			</div>
+		</div>
+		<!-- <div class="flex justify-center place-self-center mt-5 pb-10">
       <button
         class="text-[16px] 4k:text-6xl sm:text-[20px] font-extrabold text-[#FFFFFF] bg-[#720987] p-3 4k:p-8"
       >
@@ -364,188 +380,188 @@
       </button>
     </div> -->
 
-    <!--headerEND-->
-    <!--main-->
+		<!--headerEND-->
+		<!--main-->
 
-    <div
-      class="p-10 columns-3 container flex justify-around items-center flex-wrap h-screen overflow-auto"
-    >
-      <div
-        class="relative bg-left-top bg-gradient-to-t from-pablo-sea to-pablo-blue bg-[length:8px_0%] bg-no-repeat hover:bg-[length:8px_100%] transition-all duration-[250ms] hover:delay-[0ms] delay-[180ms] ease-out text-white"
-      >
-        <div
-          class="h-fit w-full text-white text-2xl opacity-100 font-sans font-extralight bg-left-bottom bg-gradient-to-r from-pablo-sea to-pablo-blue bg-[length:0%_8px] bg-no-repeat hover:bg-[length:20%_8px] transition-all hover:delay-[260ms] ease-out pl-6 pr-6 md:bg-left-bottom md:bg-gradient-to-r items-center flex-wrap"
-        >
-          <div class="md:pl-3">
-            <h1
-              class="mb-2 text-base 4k:text-8xl xxs:text-3xl md:text-5xl text-white font-sans"
-            >
-              LOREM IPSUM
-            </h1>
-            <div
-              class="relative 4k:w-[768px] 4k:h-[640px] md:w-96 md:h-80 xs:w-48 xs:h-40 xxs:w-24 xxs:h-20 w-16 h-14 overflow-hidden bg-[length:4px_0%]"
-            >
-              <div
-                class="absolute h-full w-full text-white 4k:text-6xl xs:text-2xl xxs:text-sm text-xs opacity-100 font-sans font-extralight"
-              >
-                test test test test test test test test test test test
-              </div>
-              <div
-                class="absolute h-full w-full bg-gradient-to-t from-pablo-purple to-transparent opacity-100 hover:opacity-0 bg-[#161616] duration-300"
-              ></div>
-            </div>
-          </div>
-        </div>
-      </div>
+		<div
+			class="p-10 columns-3 container flex justify-around items-center flex-wrap h-screen overflow-auto bg-black-bg"
+		>
+			<div
+				class="relative bg-left-top bg-gradient-to-t from-pablo-sea to-pablo-blue bg-[length:8px_0%] bg-no-repeat hover:bg-[length:8px_100%] transition-all duration-[250ms] hover:delay-[0ms] delay-[180ms] ease-out text-white"
+			>
+				<div
+					class="h-fit w-full text-white text-2xl opacity-100 font-sans font-extralight bg-left-bottom bg-gradient-to-r from-pablo-sea to-pablo-blue bg-[length:0%_8px] bg-no-repeat hover:bg-[length:20%_8px] transition-all hover:delay-[260ms] ease-out pl-6 pr-6 md:bg-left-bottom md:bg-gradient-to-r items-center flex-wrap"
+				>
+					<div class="md:pl-3">
+						<h1
+							class="mb-2 text-base 4k:text-8xl xxs:text-3xl md:text-5xl text-white font-sans"
+						>
+							LOREM IPSUM
+						</h1>
+						<div
+							class="relative 4k:w-[768px] 4k:h-[640px] md:w-96 md:h-80 xs:w-48 xs:h-40 xxs:w-24 xxs:h-20 w-16 h-14 overflow-hidden bg-[length:4px_0%]"
+						>
+							<div
+								class="absolute h-full w-full text-white 4k:text-6xl xs:text-2xl xxs:text-sm text-xs opacity-100 font-sans font-extralight"
+							>
+								test test test test test test test test test test test
+							</div>
+							<div
+								class="absolute h-full w-full bg-gradient-to-t from-pablo-purple to-transparent opacity-100 hover:opacity-0 bg-[#161616] duration-300"
+							></div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-      <div
-        class="mt-24 md:relative flex bg-left-top bg-gradient-to-t from-pablo-sea to-pablo-blue bg-[length:8px_0%] bg-no-repeat hover:bg-[length:8px_100%] transition-all duration-[250ms] hover:delay-[0ms] delay-[180ms] ease-out text-white"
-      >
-        <div
-          class="h-fit w-full text-white text-2xl opacity-100 font-sans font-extralight bg-left-bottom bg-gradient-to-r from-pablo-sea to-pablo-blue bg-[length:0%_8px] bg-no-repeat hover:bg-[length:20%_8px] transition-all hover:delay-[260ms] ease-out pl-6 pr-6 md:bg-left-bottom md:bg-gradient-to-r items-center flex-wrap"
-        >
-          <div class="md:pl-3">
-            <h1
-              class="mb-2 text-base 4k:text-8xl xxs:text-3xl md:text-5xl text-white font-sans"
-            >
-              LOREM IPSUM
-            </h1>
-            <div
-              class="relative 4k:w-[768px] 4k:h-[640px] md:w-96 md:h-80 xs:w-48 xs:h-40 xxs:w-24 xxs:h-20 w-16 h-14 overflow-hidden bg-[length:4px_0%]"
-            >
-              <div
-                class="absolute h-fit w-full text-white 4k:text-6xl xs:text-2xl xxs:text-sm text-xs opacity-100 font-sans font-extralight"
-              >
-                test test test test test test test test test test test
-              </div>
-              <div
-                class="absolute h-full w-full bg-gradient-to-t from-pablo-purple to-transparent opacity-100 hover:opacity-0 bg-[#161616] duration-300"
-              ></div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div
-        class="mt-28 md:mt-48 md:relative flex bg-left-top bg-gradient-to-t from-pablo-sea to-pablo-blue bg-[length:8px_0%] bg-no-repeat hover:bg-[length:8px_100%] transition-all duration-[250ms] hover:delay-[0ms] delay-[180ms] ease-out text-white"
-      >
-        <div
-          class="h-fit w-full text-white text-2xl opacity-100 font-sans font-extralight bg-left-bottom bg-gradient-to-r from-pablo-sea to-pablo-blue bg-[length:0%_8px] bg-no-repeat hover:bg-[length:20%_8px] transition-all hover:delay-[260ms] ease-out pl-6 pr-6 md:bg-left-bottom md:bg-gradient-to-r items-center flex-wrap"
-        >
-          <div class="md:pl-3">
-            <h1
-              class="mb-2 text-base 4k:text-8xl xxs:text-3xl md:text-5xl text-white font-sans"
-            >
-              LOREM IPSUM
-            </h1>
-            <div
-              class="relative 4k:w-[768px] 4k:h-[640px] md:w-96 md:h-80 xs:w-48 xs:h-40 xxs:w-24 xxs:h-20 w-16 h-14 overflow-hidden bg-[length:4px_0%]"
-            >
-              <div
-                class="absolute h-full w-full text-white 4k:text-6xl xs:text-2xl xxs:text-sm text-xs opacity-100 font-sans font-extralight"
-              >
-                test test test test test test test test test test test
-              </div>
-              <div
-                class="absolute h-full w-full bg-gradient-to-t from-pablo-purple to-transparent opacity-100 hover:opacity-0 bg-[#161616] duration-300"
-              ></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+			<div
+				class="mt-24 md:relative flex bg-left-top bg-gradient-to-t from-pablo-sea to-pablo-blue bg-[length:8px_0%] bg-no-repeat hover:bg-[length:8px_100%] transition-all duration-[250ms] hover:delay-[0ms] delay-[180ms] ease-out text-white"
+			>
+				<div
+					class="h-fit w-full text-white text-2xl opacity-100 font-sans font-extralight bg-left-bottom bg-gradient-to-r from-pablo-sea to-pablo-blue bg-[length:0%_8px] bg-no-repeat hover:bg-[length:20%_8px] transition-all hover:delay-[260ms] ease-out pl-6 pr-6 md:bg-left-bottom md:bg-gradient-to-r items-center flex-wrap"
+				>
+					<div class="md:pl-3">
+						<h1
+							class="mb-2 text-base 4k:text-8xl xxs:text-3xl md:text-5xl text-white font-sans"
+						>
+							LOREM IPSUM
+						</h1>
+						<div
+							class="relative 4k:w-[768px] 4k:h-[640px] md:w-96 md:h-80 xs:w-48 xs:h-40 xxs:w-24 xxs:h-20 w-16 h-14 overflow-hidden bg-[length:4px_0%]"
+						>
+							<div
+								class="absolute h-fit w-full text-white 4k:text-6xl xs:text-2xl xxs:text-sm text-xs opacity-100 font-sans font-extralight"
+							>
+								test test test test test test test test test test test
+							</div>
+							<div
+								class="absolute h-full w-full bg-gradient-to-t from-pablo-purple to-transparent opacity-100 hover:opacity-0 bg-[#161616] duration-300"
+							></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div
+				class="mt-28 md:mt-48 md:relative flex bg-left-top bg-gradient-to-t from-pablo-sea to-pablo-blue bg-[length:8px_0%] bg-no-repeat hover:bg-[length:8px_100%] transition-all duration-[250ms] hover:delay-[0ms] delay-[180ms] ease-out text-white"
+			>
+				<div
+					class="h-fit w-full text-white text-2xl opacity-100 font-sans font-extralight bg-left-bottom bg-gradient-to-r from-pablo-sea to-pablo-blue bg-[length:0%_8px] bg-no-repeat hover:bg-[length:20%_8px] transition-all hover:delay-[260ms] ease-out pl-6 pr-6 md:bg-left-bottom md:bg-gradient-to-r items-center flex-wrap"
+				>
+					<div class="md:pl-3">
+						<h1
+							class="mb-2 text-base 4k:text-8xl xxs:text-3xl md:text-5xl text-white font-sans"
+						>
+							LOREM IPSUM
+						</h1>
+						<div
+							class="relative 4k:w-[768px] 4k:h-[640px] md:w-96 md:h-80 xs:w-48 xs:h-40 xxs:w-24 xxs:h-20 w-16 h-14 overflow-hidden bg-[length:4px_0%]"
+						>
+							<div
+								class="absolute h-full w-full text-white 4k:text-6xl xs:text-2xl xxs:text-sm text-xs opacity-100 font-sans font-extralight"
+							>
+								test test test test test test test test test test test
+							</div>
+							<div
+								class="absolute h-full w-full bg-gradient-to-t from-pablo-purple to-transparent opacity-100 hover:opacity-0 bg-[#161616] duration-300"
+							></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
-    <!--mainEND-->
+		<!--mainEND-->
 
-    <!--footer-->
-    <footer
-      class="bg-gradient-to-t from-pablo-sea to to-[#181818] text-white place-self-end"
-    >
-      <div
-        class="grid xl:grid-cols-4 xl:grid-rows-1 md:grid-cols-2 md:grid-rows-2 text-center p-6 border-b"
-      >
-        <div id="footer-container-1" class="md:p-10 mb-12 sm:mb-0">
-          <h3
-            class="4k:text-4xl 2xl:text-2xl mb-4 pb-1 font-bold bg-left-bottom bg-gradient-to-r from-pablo-pink via-pablo-purple to-pablo-blue bg-[length:100%_4px] bg-no-repeat text-[24px]"
-          >
-            ADRES
-          </h3>
-          <div class="4k:text-2xl 2xl:text-xl">
-            <h3 class="mb-4">Koło Naukowe Epicentrum</h3>
-            <h3 class="mb-4">
-              Wydział Zarządzania i Komunikacji Społecznej UJ
-            </h3>
-            <h3 class="mb-4">ul. Łojasiewicza 4, pok. 3.232</h3>
-            <h3>30-348 Kraków</h3>
-          </div>
-        </div>
+		<!--footer-->
+		<footer
+			class="bg-gradient-to-t from-pablo-sea to to-[#181818] text-white place-self-end"
+		>
+			<div
+				class="grid xl:grid-cols-4 xl:grid-rows-1 md:grid-cols-2 md:grid-rows-2 text-center p-6 border-b"
+			>
+				<div id="footer-container-1" class="md:p-10 mb-12 sm:mb-0">
+					<h3
+						class="4k:text-4xl 2xl:text-2xl mb-4 pb-1 font-bold bg-left-bottom bg-gradient-to-r from-pablo-pink via-pablo-purple to-pablo-blue bg-[length:100%_4px] bg-no-repeat text-[24px]"
+					>
+						ADRES
+					</h3>
+					<div class="4k:text-2xl 2xl:text-xl">
+						<h3 class="mb-4">Koło Naukowe Epicentrum</h3>
+						<h3 class="mb-4">
+							Wydział Zarządzania i Komunikacji Społecznej UJ
+						</h3>
+						<h3 class="mb-4">ul. Łojasiewicza 4, pok. 3.232</h3>
+						<h3>30-348 Kraków</h3>
+					</div>
+				</div>
 
-        <div id="footer-container-2" class="md:p-10 mb-12 sm:mb-0">
-          <h3
-            class="4k:text-4xl 2xl:text-2xl mb-4 pb-1 font-bold bg-left-bottom bg-gradient-to-r from-pablo-pink via-pablo-purple to-pablo-blue bg-[length:100%_4px] bg-no-repeat text-[24px]"
-          >
-            SEKCJE
-          </h3>
-          <div class="4k:text-2xl 2xl:text-xl">
-            <h3 class="mb-4">Koło Naukowe Epicentrum</h3>
-            <h3 class="mb-4">
-              Wydział Zarządzania i Komunikacji Społecznej UJ
-            </h3>
-            <h3 class="mb-4">ul. Łojasiewicza 4, pok. 3.232</h3>
-            <h3>30-348 Kraków</h3>
-          </div>
-        </div>
+				<div id="footer-container-2" class="md:p-10 mb-12 sm:mb-0">
+					<h3
+						class="4k:text-4xl 2xl:text-2xl mb-4 pb-1 font-bold bg-left-bottom bg-gradient-to-r from-pablo-pink via-pablo-purple to-pablo-blue bg-[length:100%_4px] bg-no-repeat text-[24px]"
+					>
+						SEKCJE
+					</h3>
+					<div class="4k:text-2xl 2xl:text-xl">
+						<h3 class="mb-4">Koło Naukowe Epicentrum</h3>
+						<h3 class="mb-4">
+							Wydział Zarządzania i Komunikacji Społecznej UJ
+						</h3>
+						<h3 class="mb-4">ul. Łojasiewicza 4, pok. 3.232</h3>
+						<h3>30-348 Kraków</h3>
+					</div>
+				</div>
 
-        <div id="footer-container-3" class="md:p-10 mb-12 sm:mb-0">
-          <h3
-            class="4k:text-4xl 2xl:text-2xl mb-4 pb-1 font-bold bg-left-bottom bg-gradient-to-r from-pablo-pink via-pablo-purple to-pablo-blue bg-[length:100%_4px] bg-no-repeat text-[24px]"
-          >
-            ZARZĄD
-          </h3>
-          <div class="4k:text-2xl 2xl:text-xl">
-            <h3 class="mb-4">Koło Naukowe Epicentrum</h3>
-            <h3 class="mb-4">
-              Wydział Zarządzania i Komunikacji Społecznej UJ
-            </h3>
-            <h3 class="mb-4">ul. Łojasiewicza 4, pok. 3.232</h3>
-            <h3>30-348 Kraków</h3>
-          </div>
-        </div>
+				<div id="footer-container-3" class="md:p-10 mb-12 sm:mb-0">
+					<h3
+						class="4k:text-4xl 2xl:text-2xl mb-4 pb-1 font-bold bg-left-bottom bg-gradient-to-r from-pablo-pink via-pablo-purple to-pablo-blue bg-[length:100%_4px] bg-no-repeat text-[24px]"
+					>
+						ZARZĄD
+					</h3>
+					<div class="4k:text-2xl 2xl:text-xl">
+						<h3 class="mb-4">Koło Naukowe Epicentrum</h3>
+						<h3 class="mb-4">
+							Wydział Zarządzania i Komunikacji Społecznej UJ
+						</h3>
+						<h3 class="mb-4">ul. Łojasiewicza 4, pok. 3.232</h3>
+						<h3>30-348 Kraków</h3>
+					</div>
+				</div>
 
-        <div id="footer-container-4" class="md:p-10 mb-12 sm:mb-0">
-          <h3
-            class="4k:text-4xl 2xl:text-2xl mb-4 pb-1 font-bold bg-left-bottom bg-gradient-to-r from-pablo-pink via-pablo-purple to-pablo-blue bg-[length:100%_4px] bg-no-repeat text-[24px]"
-          >
-            KONTAKT
-          </h3>
-          <div class="4k:text-2xl 2xl:text-xl">
-            <h3 class="mb-4">Koło Naukowe Epicentrum</h3>
-            <h3 class="mb-4">
-              Wydział Zarządzania i Komunikacji Społecznej UJ
-            </h3>
-            <h3 class="mb-4">ul. Łojasiewicza 4, pok. 3.232</h3>
-            <h3>30-348 Kraków</h3>
-          </div>
-        </div>
-      </div>
-      <div class="4k:text-4xl 2xl:text-2xl text-center p-4 text-white bg-black">
-        KN Epicentrum, © 2022 - wieczność
-      </div>
-    </footer>
+				<div id="footer-container-4" class="md:p-10 mb-12 sm:mb-0">
+					<h3
+						class="4k:text-4xl 2xl:text-2xl mb-4 pb-1 font-bold bg-left-bottom bg-gradient-to-r from-pablo-pink via-pablo-purple to-pablo-blue bg-[length:100%_4px] bg-no-repeat text-[24px]"
+					>
+						KONTAKT
+					</h3>
+					<div class="4k:text-2xl 2xl:text-xl">
+						<h3 class="mb-4">Koło Naukowe Epicentrum</h3>
+						<h3 class="mb-4">
+							Wydział Zarządzania i Komunikacji Społecznej UJ
+						</h3>
+						<h3 class="mb-4">ul. Łojasiewicza 4, pok. 3.232</h3>
+						<h3>30-348 Kraków</h3>
+					</div>
+				</div>
+			</div>
+			<div class="4k:text-4xl 2xl:text-2xl text-center p-4 text-white bg-black">
+				KN Epicentrum, © 2022 - wieczność
+			</div>
+		</footer>
 
-    <!--footerEND-->
-    <script>
-      function Menu(e) {
-        //scriptForHamburgerMenu
-        let list = document.querySelector("ul");
+		<!--footerEND-->
+		<script>
+			function Menu(e) {
+				//scriptForHamburgerMenu
+				let list = document.querySelector('ul');
 
-        e.name === "menu"
-          ? ((e.name = "close"),
-            list.classList.add("right-[0px]"),
-            list.classList.add("opacity-100"))
-          : ((e.name = "menu"),
-            list.classList.remove("right-[0px]"),
-            list.classList.remove("opacity-100"));
-      }
-    </script>
-  </body>
+				e.name === 'menu'
+					? ((e.name = 'close'),
+					  list.classList.add('right-[0px]'),
+					  list.classList.add('opacity-100'))
+					: ((e.name = 'menu'),
+					  list.classList.remove('right-[0px]'),
+					  list.classList.remove('opacity-100'));
+			}
+		</script>
+	</body>
 </html>
