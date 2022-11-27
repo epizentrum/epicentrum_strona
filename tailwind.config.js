@@ -32,8 +32,8 @@ module.exports = {
     },
     keyframes: {
       slideLeft: {
-        "0%": { transform: "translateX(50px)", opacity: "0" },
-        "100%:": { transform: "translateX(0px)", opacity: "1" },
+        "0%": { transform: "translateY(10px)", opacity: "0" },
+        "100%:": { transform: "translateY(0px)", opacity: "1" },
       },
       slideRight: {
         "0%": { transform: "translateX(-300px)", opacity: "0" },

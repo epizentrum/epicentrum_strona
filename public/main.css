@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.2.1 | MIT License | https://tailwindcss.com
+! tailwindcss v3.1.7 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -355,6 +355,13 @@ input::-moz-placeholder, textarea::-moz-placeholder {
   /* 2 */
 }
 
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  opacity: 1;
+  /* 1 */
+  color: #9ca3af;
+  /* 2 */
+}
+
 input::placeholder,
 textarea::placeholder {
   opacity: 1;
@@ -408,12 +415,6 @@ img,
 video {
   max-width: 100%;
   height: auto;
-}
-
-/* Make elements with the HTML hidden attribute stay hidden by default */
-
-[hidden] {
-  display: none;
 }
 
 *, ::before, ::after {
@@ -626,7 +627,12 @@ video {
 }
 
 .sticky {
+  position: -webkit-sticky;
   position: sticky;
+}
+
+.top-0 {
+  top: 0px;
 }
 
 .left-6 {
@@ -635,10 +641,6 @@ video {
 
 .top-1\/2 {
   top: 50%;
-}
-
-.top-0 {
-  top: 0px;
 }
 
 .right-\[-400px\] {
@@ -715,8 +717,8 @@ video {
   margin-bottom: 8rem;
 }
 
-.mt-20 {
-  margin-top: 5rem;
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
 .mt-2 {
@@ -817,12 +819,6 @@ video {
   width: 4rem;
 }
 
-.w-fit {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
 .-translate-x-1\/2 {
   --tw-translate-x: -50%;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -889,24 +885,24 @@ video {
 
 @-webkit-keyframes slideLeft {
   0% {
-    transform: translateX(50px);
+    transform: translateY(10px);
     opacity: 0;
   }
 
   100%: {
-    transform: translateX(0px);
+    transform: translateY(0px);
     opacity: 1;
   }
 }
 
 @keyframes slideLeft {
   0% {
-    transform: translateX(50px);
+    transform: translateY(10px);
     opacity: 0;
   }
 
   100%: {
-    transform: translateX(0px);
+    transform: translateY(0px);
     opacity: 1;
   }
 }
@@ -1165,10 +1161,6 @@ video {
 
 .overflow-x-hidden {
   overflow-x: hidden;
-}
-
-.overflow-y-hidden {
-  overflow-y: hidden;
 }
 
 .truncate {
@@ -1569,9 +1561,9 @@ video {
 }
 
 .transition {
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
-  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-text-decoration-color, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }
@@ -1713,10 +1705,6 @@ body {
     margin-top: 1rem;
   }
 
-  .sm\:h-16 {
-    height: 4rem;
-  }
-
   .sm\:w-80 {
     width: 20rem;
   }
@@ -1750,6 +1738,11 @@ body {
 
   .sm\:-translate-y-7 {
     --tw-translate-y: -1.75rem;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .sm\:-translate-y-8 {
+    --tw-translate-y: -2rem;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
@@ -1813,24 +1806,24 @@ body {
 
   @-webkit-keyframes slideLeft {
     0% {
-      transform: translateX(50px);
+      transform: translateY(10px);
       opacity: 0;
     }
 
     100%: {
-      transform: translateX(0px);
+      transform: translateY(0px);
       opacity: 1;
     }
   }
 
   @keyframes slideLeft {
     0% {
-      transform: translateX(50px);
+      transform: translateY(10px);
       opacity: 0;
     }
 
     100%: {
-      transform: translateX(0px);
+      transform: translateY(0px);
       opacity: 1;
     }
   }
@@ -1891,23 +1884,14 @@ body {
     z-index: auto;
   }
 
-  .md\:mx-4 {
-    margin-left: 1rem;
-    margin-right: 1rem;
-  }
-
-  .md\:my-0 {
-    margin-top: 0px;
-    margin-bottom: 0px;
-  }
-
   .md\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
   }
 
-  .md\:mr-6 {
-    margin-right: 1.5rem;
+  .md\:my-0 {
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 
   .md\:ml-0 {
@@ -1926,16 +1910,20 @@ body {
     margin-top: 12rem;
   }
 
+  .md\:mt-20 {
+    margin-top: 5rem;
+  }
+
   .md\:flex {
     display: flex;
   }
 
-  .md\:h-80 {
-    height: 20rem;
-  }
-
   .md\:h-16 {
     height: 4rem;
+  }
+
+  .md\:h-80 {
+    height: 20rem;
   }
 
   .md\:w-96 {
@@ -2033,6 +2021,10 @@ body {
     padding-left: 0px;
   }
 
+  .md\:pr-6 {
+    padding-right: 1.5rem;
+  }
+
   .md\:pl-6 {
     padding-left: 1.5rem;
   }
@@ -2047,10 +2039,6 @@ body {
 
   .md\:pl-3 {
     padding-left: 0.75rem;
-  }
-
-  .md\:pr-6 {
-    padding-right: 1.5rem;
   }
 
   .md\:pt-20 {
@@ -2105,6 +2093,10 @@ body {
 }
 
 @media (min-width: 2000px) {
+  .\34k\:mt-56 {
+    margin-top: 14rem;
+  }
+
   .\34k\:h-44 {
     height: 11rem;
   }
@@ -2123,10 +2115,6 @@ body {
 
   .\34k\:pr-40 {
     padding-right: 10rem;
-  }
-
-  .\34k\:pt-56 {
-    padding-top: 14rem;
   }
 
   .\34k\:text-6xl {

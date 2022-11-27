@@ -226,112 +226,130 @@
     </div>
 
     <!-- NAVBAR -->
-   <nav
-   class="sticky top-0 z-40 w-screen md:p-3 md:pb-5 bg-zinc-900 md:bg-zinc-900 md:flex md:items-center md:justify-between bg-left-bottom bg-gradient-to-r from-cyan-500 to-cyan-500 bg-[length:0%_3px] bg-no-repeat transition-all duration-500 ease-in-out"
-   :class="{'bg-[length:0%_3px]': !scrolledFromTop, 'bg-[length:100%_3px]': scrolledFromTop}"
- >
-   <div class="flex justify-between mx-2 items-center">
-     <a href="index.html"
-       ><img
-         class="h-12 md:h-16 4k:h-44 duration-500 transition-all ease-in-out"
-         src="img/epicentrum_logo2.svg"
-         alt="logo"
-         :class="{'opacity-0': !scrolledFromTop}"
+    <nav
+      class="sticky top-0 z-40 w-screen md:p-3 md:pb-5 bg-zinc-900 md:bg-zinc-900 md:flex md:items-center md:justify-between bg-left-bottom bg-gradient-to-r from-cyan-500 to-cyan-500 bg-[length:0%_3px] bg-no-repeat transition-all duration-500 ease-in-out"
+      :class="{'bg-[length:0%_3px]': !scrolledFromTop, 'bg-[length:100%_3px]': scrolledFromTop}"
+    >
+      <div class="flex justify-between mx-2 items-center">
+        <a href="index.html"
+          ><img
+            class="h-12 md:h-16 4k:h-44 duration-500 transition-all ease-in-out"
+            src="img/epicentrum_logo2.svg"
+            alt="logo"
+            :class="{'opacity-0': !scrolledFromTop}"
+          />
+        </a>
+        <div class="flex flex-col justify-center md:opacity-0">
+          <div class="relative py-3 sm:max-w-xl mx-auto">
+            <div x-data="{ open: false }">
+              <button
+                class="w-14 h-14 relative focus:outline-none z-10 space-y-4"
+                @click="open = !open"
+                name="menu"
+                onclick="Menu(this)"
+              >
+                <div
+                  class="block w-5 absolute left-6 top-1/2 transform -translate-x-1/2 -translate-y-1/2"
+                >
+                  <span
+                    class="block absolute rounded-md h-1 w-9 text-white bg-current transform transition duration-500 ease-in-out"
+                    :class="{'rotate-45': open,' -translate-y-3': !open }"
+                  ></span>
+                  <span
+                    class="block absolute rounded-md h-1 w-9 text-white bg-current transform transition duration-500 ease-in-out"
+                    :class="{'opacity-0': open } "
+                  ></span>
+                  <span
+                    class="block absolute rounded-md h-1 w-9 text-white bg-current transform transition duration-500 ease-in-out"
+                    :class="{'-rotate-45': open, ' translate-y-3': !open}"
+                  ></span>
+                </div>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
 
-       />
-     </a>
-     <div class="flex flex-col justify-center md:opacity-0">
-       <div class="relative py-3 sm:max-w-xl mx-auto">
-           <div x-data="{ open: false }">
-               <button class="w-14 h-14 relative focus:outline-none  z-10 space-y-4" @click="open = !open" name="menu" onclick="Menu(this)">
-                  
-                   <div class="block w-5 absolute left-6 top-1/2   transform  -translate-x-1/2 -translate-y-1/2 " >
-                       <span  class="block absolute rounded-md h-1 w-9 text-white bg-current transform transition duration-500 ease-in-out" :class="{'rotate-45': open,' -translate-y-3': !open }"></span>
-                       <span  class="block absolute rounded-md h-1 w-9 text-white bg-current transform transition duration-500 ease-in-out" :class="{'opacity-0': open } "></span>
-                       <span  class="block absolute rounded-md h-1 w-9 text-white bg-current transform  transition duration-500 ease-in-out" :class="{'-rotate-45': open, ' translate-y-3': !open}"></span>
-                   </div>
-               </button>
-             </div>
-       </div>
-   </div>
-   </div>
-
-   <ul
-     class="md:flex md:items-center text-white font-bold md:z-auto md:static fixed bg-zinc-900 md:bg-zinc-900/0 top-0 pt-20 md:pt-6 md:pb-0 md:pl-0 md:pr-6 space-y-16 md:space-y-0 md:opacity-100 opacity-0 right-[-400px] transition-all ease-in duration-300 md:duration-0 md:transition-none bg-left-bottom bg-gradient-to-t from-pablo-sea to-pablo-blue bg-[length:4px_100%] bg-no-repeat md:bg-[length:4px_0%]"
-   >
-     <li class="md:mx-0 lg:mx-4 md:pl-6 md:my-0 md:pr-0 md:pt-0 pt-14 pl-8 group">
-       <a href="dla_studentow.html" class="text-xl 4k:text-6xl">
-         <span
-           class="bg-left-bottom bg-gradient-to-l from-pablo-sea to-pablo-blue bg-[length:0%_4px] bg-no-repeat group-hover:bg-[length:100%_4px] pb-1.5 transition-all duration-[300ms] group-hover:delay-[0ms] delay-[180ms] ease-out md:ml-0 md:bg-right-bottom md:bg-gradient-to-r"
-         >
-           <span
-             class="inline-table pr-3 bg-right-bottom bg-gradient-to-t from-pablo-sea to-pablo-blue bg-[length:4px_0%] bg-no-repeat group-hover:bg-[length:4px_100%] transition-all duration-[250ms] group-hover:delay-[260ms] ease-out md:pr-0 md:pl-3 md:bg-left-bottom truncate"
-           >
-             <div
-               class="absolute ml-1 mt-1.5 md:mt-1.5 h-5 w-5 bg-gradient-to-t from-pablo-sea to-pablo-blue blur opacity-0 group-hover:opacity-100 transition-all duration-500 ease-out"
-             ></div>
-             <img
-               class="relative inline h-7"
-               src="img/svgnav/heroicons-email-small.svg"
-               alt="info"
-             />
-
-             DLA STUDENTOW
-           </span>
-         </span>
-       </a>
-     </li>
-     <li class="md:mx-0 lg:mx-4 md:pl-6 md:my-0 md:pr-0 md:pt-0 pl-8 group">
-      <a href="dla_studentow.html" class="text-xl 4k:text-6xl">
-        <span
-          class="bg-left-bottom bg-gradient-to-l from-pablo-sea to-pablo-blue bg-[length:0%_4px] bg-no-repeat group-hover:bg-[length:100%_4px] pb-1.5 transition-all duration-[300ms] group-hover:delay-[0ms] delay-[180ms] ease-out md:ml-0 md:bg-right-bottom md:bg-gradient-to-r"
+      <ul
+        class="md:flex md:items-center text-white font-bold md:z-auto md:static fixed bg-zinc-900 md:bg-zinc-900/0 top-0 pt-20 md:pt-6 md:pb-0 md:pl-0 md:pr-6 space-y-16 md:space-y-0 md:opacity-100 opacity-0 right-[-400px] transition-all ease-in duration-300 md:duration-0 md:transition-none bg-left-bottom bg-gradient-to-t from-pablo-sea to-pablo-blue bg-[length:4px_100%] bg-no-repeat md:bg-[length:4px_0%]"
+      >
+        <li
+          class="md:mx-0 lg:mx-4 md:pl-6 md:my-0 md:pr-0 md:pt-0 pt-14 pl-8 group"
         >
-          <span
-            class="inline-table pr-3 bg-right-bottom bg-gradient-to-t from-pablo-sea to-pablo-blue bg-[length:4px_0%] bg-no-repeat group-hover:bg-[length:4px_100%] transition-all duration-[250ms] group-hover:delay-[260ms] ease-out md:pr-0 md:pl-3 md:bg-left-bottom truncate"
-          >
-            <div
-              class="absolute ml-1 mt-1.5 md:mt-1.5 h-5 w-5 bg-gradient-to-t from-pablo-sea to-pablo-blue blur opacity-0 group-hover:opacity-100 transition-all duration-500 ease-out"
-            ></div>
-            <img
-              class="relative inline h-7"
-              src="img/svgnav/heroicons-email-small.svg"
-              alt="info"
-            />
+          <a href="dla_studentow.html" class="text-xl 4k:text-6xl">
+            <span
+              class="bg-left-bottom bg-gradient-to-l from-pablo-sea to-pablo-blue bg-[length:0%_4px] bg-no-repeat group-hover:bg-[length:100%_4px] pb-1.5 transition-all duration-[300ms] group-hover:delay-[0ms] delay-[180ms] ease-out md:ml-0 md:bg-right-bottom md:bg-gradient-to-r"
+            >
+              <span
+                class="inline-table pr-3 bg-right-bottom bg-gradient-to-t from-pablo-sea to-pablo-blue bg-[length:4px_0%] bg-no-repeat group-hover:bg-[length:4px_100%] transition-all duration-[250ms] group-hover:delay-[260ms] ease-out md:pr-0 md:pl-3 md:bg-left-bottom truncate"
+              >
+                <div
+                  class="absolute ml-1 mt-1.5 md:mt-1.5 h-5 w-5 bg-gradient-to-t from-pablo-sea to-pablo-blue blur opacity-0 group-hover:opacity-100 transition-all duration-500 ease-out"
+                ></div>
+                <img
+                  class="relative inline h-7"
+                  src="img/svgnav/heroicons-email-small.svg"
+                  alt="info"
+                />
 
-            DLA FIRM
-          </span>
-        </span>
-      </a>
-    </li>
-    <li class="md:mx-0 lg:mx-4 md:pl-6 md:my-0 md:pr-0 md:pb-0 pb-20 pr-40 4k:pr-40 pl-8 bg-left-bottom bg-gradient-to-r from-pablo-sea to-pablo-blue bg-[length:100%_4px] bg-no-repeat md:bg-[length:0%_4px] group">
-      <a href="kontakt_i_wspolpraca.html" class="text-xl 4k:text-6xl">
-        <span
-          class="bg-left-bottom bg-gradient-to-l from-pablo-sea to-pablo-blue bg-[length:0%_4px] bg-no-repeat group-hover:bg-[length:100%_4px] pb-1.5 transition-all duration-[300ms] group-hover:delay-[0ms] delay-[180ms] ease-out md:ml-0 md:bg-right-bottom md:bg-gradient-to-r"
+                DLA STUDENTOW
+              </span>
+            </span>
+          </a>
+        </li>
+        <li class="md:mx-0 lg:mx-4 md:pl-6 md:my-0 md:pr-0 md:pt-0 pl-8 group">
+          <a href="dla_studentow.html" class="text-xl 4k:text-6xl">
+            <span
+              class="bg-left-bottom bg-gradient-to-l from-pablo-sea to-pablo-blue bg-[length:0%_4px] bg-no-repeat group-hover:bg-[length:100%_4px] pb-1.5 transition-all duration-[300ms] group-hover:delay-[0ms] delay-[180ms] ease-out md:ml-0 md:bg-right-bottom md:bg-gradient-to-r"
+            >
+              <span
+                class="inline-table pr-3 bg-right-bottom bg-gradient-to-t from-pablo-sea to-pablo-blue bg-[length:4px_0%] bg-no-repeat group-hover:bg-[length:4px_100%] transition-all duration-[250ms] group-hover:delay-[260ms] ease-out md:pr-0 md:pl-3 md:bg-left-bottom truncate"
+              >
+                <div
+                  class="absolute ml-1 mt-1.5 md:mt-1.5 h-5 w-5 bg-gradient-to-t from-pablo-sea to-pablo-blue blur opacity-0 group-hover:opacity-100 transition-all duration-500 ease-out"
+                ></div>
+                <img
+                  class="relative inline h-7"
+                  src="img/svgnav/heroicons-email-small.svg"
+                  alt="info"
+                />
+
+                DLA FIRM
+              </span>
+            </span>
+          </a>
+        </li>
+        <li
+          class="md:mx-0 lg:mx-4 md:pl-6 md:my-0 md:pr-0 md:pb-0 pb-20 pr-40 4k:pr-40 pl-8 bg-left-bottom bg-gradient-to-r from-pablo-sea to-pablo-blue bg-[length:100%_4px] bg-no-repeat md:bg-[length:0%_4px] group"
         >
-          <span
-            class="inline-table pr-3 bg-right-bottom bg-gradient-to-t from-pablo-sea to-pablo-blue bg-[length:4px_0%] bg-no-repeat group-hover:bg-[length:4px_100%] transition-all duration-[250ms] group-hover:delay-[260ms] ease-out md:pr-0 md:pl-3 md:bg-left-bottom truncate"
-          >
-            <div
-              class="absolute ml-1 mt-1.5 md:mt-1.5 h-5 w-5 bg-gradient-to-t from-pablo-sea to-pablo-blue blur opacity-0 group-hover:opacity-100 transition-all duration-500 ease-out"
-            ></div>
-            <img
-              class="relative inline h-7"
-              src="img/svgnav/heroicons-email-small.svg"
-              alt="info"
-            />
+          <a href="kontakt_i_wspolpraca.html" class="text-xl 4k:text-6xl">
+            <span
+              class="bg-left-bottom bg-gradient-to-l from-pablo-sea to-pablo-blue bg-[length:0%_4px] bg-no-repeat group-hover:bg-[length:100%_4px] pb-1.5 transition-all duration-[300ms] group-hover:delay-[0ms] delay-[180ms] ease-out md:ml-0 md:bg-right-bottom md:bg-gradient-to-r"
+            >
+              <span
+                class="inline-table pr-3 bg-right-bottom bg-gradient-to-t from-pablo-sea to-pablo-blue bg-[length:4px_0%] bg-no-repeat group-hover:bg-[length:4px_100%] transition-all duration-[250ms] group-hover:delay-[260ms] ease-out md:pr-0 md:pl-3 md:bg-left-bottom truncate"
+              >
+                <div
+                  class="absolute ml-1 mt-1.5 md:mt-1.5 h-5 w-5 bg-gradient-to-t from-pablo-sea to-pablo-blue blur opacity-0 group-hover:opacity-100 transition-all duration-500 ease-out"
+                ></div>
+                <img
+                  class="relative inline h-7"
+                  src="img/svgnav/heroicons-email-small.svg"
+                  alt="info"
+                />
 
-            KONTAKT
-          </span>
-        </span>
-      </a>
-    </li>
-   </ul>
- </nav>
- <!--navbarEnd-->
+                KONTAKT
+              </span>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!--navbarEnd-->
     <!--header-->
 
     <div
-      class="flex justify-center items-center flex-row flex-nowrap md:flex-wrap md:flex-nowrap gap-5 w-full mt-20 4k:pt-56 px-2"
+      class="flex justify-center items-center flex-row flex-nowrap md:flex-wrap md:flex-nowrap gap-5 w-full mt-10 sm:mt-15 4k:mt-56 px-2"
     >
       <div class="md:pt-20 translate-y-5 sm:translate-y-0">
         <h1
