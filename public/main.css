@@ -693,6 +693,14 @@ video {
   margin-top: 0.25rem;
 }
 
+.mt-0\.5 {
+  margin-top: 0.125rem;
+}
+
+.mt-0 {
+  margin-top: 0px;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -1273,6 +1281,12 @@ video {
 .from-indigo-500 {
   --tw-gradient-from: #6366f1;
   --tw-gradient-to: rgb(99 102 241 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.from-pablo-pink-main {
+  --tw-gradient-from: rgba(247, 37, 133, .4);
+  --tw-gradient-to: rgb(247 37 133 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -1892,6 +1906,10 @@ body {
   .md\:my-0 {
     margin-top: 0px;
     margin-bottom: 0px;
+
+  .md\:mr-6 {
+    margin-right: 1.5rem;
+
   }
 
   .md\:ml-0 {
@@ -2041,6 +2059,10 @@ body {
     padding-left: 0.75rem;
   }
 
+  .md\:pr-6 {
+    padding-right: 1.5rem;
+  }
+  
   .md\:pt-20 {
     padding-top: 5rem;
   }
