@@ -2,7 +2,7 @@
 module.exports = {
   content: ["./public/**/*.{html,js}"],
   theme: {
-    screens: {
+       screens: {
       xxs: "150px",
       xs: "250px",
       sm: "640px",
@@ -28,6 +28,8 @@ module.exports = {
         "pablo-violet-pink": "#a21090",
         "black-bg": "#111111",
         "loading-gray": "#6F6F6F",
+        "violet-light": "#7124B5",
+        "violet-dark": "#35095B",
       },
     },
     keyframes: {

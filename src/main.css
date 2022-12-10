@@ -3,5 +3,15 @@
 @tailwind utilities;
 
 body {
-font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;
+}
+
+.image-center {
+    width: 45%;
+}
+
+@media screen and (max-width: 640px) {
+    .image-center {
+        width: 100%;
+    }
 }
