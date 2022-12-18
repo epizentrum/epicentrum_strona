@@ -994,6 +994,10 @@ video {
   align-items: center;
 }
 
+.justify-start {
+  justify-content: flex-start;
+}
+
 .justify-end {
   justify-content: flex-end;
 }
@@ -1746,6 +1750,10 @@ body {
 
   .sm\:flex-col {
     flex-direction: column;
+  }
+
+  .sm\:justify-end {
+    justify-content: flex-end;
   }
 
   .sm\:p-3 {
