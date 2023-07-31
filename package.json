@@ -4,5 +4,8 @@
 	},
 	"scripts": {
 		"build-css": "npx tailwindcss -i ./src/main.css -o ./public/main.css --watch"
+	},
+	"dependencies": {
+		"swiper": "^10.0.4"
 	}
 }
