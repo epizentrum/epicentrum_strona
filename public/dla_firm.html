@@ -1,3 +1,9 @@
+<!--
+  TODO:
+  - image responsiveness
+  - smooth scrolling
+  - gallery gets 3x the images
+-->
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -50,7 +56,7 @@
       rel="stylesheet"
     />
 
-    <!--gliderjs-->
+    <!--glidejs-->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@glidejs/glide@^3.4.1/dist/css/glide.core.min.css"
@@ -60,7 +66,7 @@
       href="https://cdn.jsdelivr.net/npm/@glidejs/glide@%5E3.4.1/dist/css/glide.theme.min.css"
     />
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
-    <!--gliderjs-->
+    <!--glidejs-->
 
     <!--sliderjs-->
     <link
@@ -245,64 +251,59 @@
       </header>
 
       <!--cards-->
-      <div class="flex 2xl:flex-row sm:flex-col justify-center flex-wrap gap-10 py-10 sm:animate-fadeInSubsite">
+      <div class="flex flex-row 2xl:flex-row sm:flex-col flex-wrap justify-center gap-10 py-10 sm:animate-fadeInSubsite">
         <!-- first -->
         <div class="relative w-1/8 sm:w-80 bg-gradient-to-t from-[#7209B7] flex sm:flex-col justify-center items-center pt-20 px-5 sm:max-w-sm sm:text-center">
           <div class="sm:-translate-y-10 rounded-full bg-gray-400 flex items-center justify-center font-mono h-24 w-24 px-10 animate-fadeIn sm:animate-none">
             <p>GRAPHIC 1</p>
           </div>
-          <div class="sm:-translate-y-16 text-[20px] py-20 px-5 pl-10 sm:pl-0 sm:px-0 animate-slideLeft sm:animate-none text-ellipsis">
+          <div class="sm:-translate-y-16 text-xl py-20 px-5 pl-10 sm:pl-0 sm:px-0 animate-slideLeft sm:animate-none text-ellipsis">
             <p>placeholder text about the topic (projekt 1)...</p>
           </div>
           <div class="pt-4 sm:pt-0">
-            <a href="#projekt1">
-              <button class="text-center text-[18px] sm:text-[20px] font-extrabold text-white bg-[#720987] p-2 sm:p-3 opacity-90 hover:opacity-100">
+              <button class="text-center text-lg sm:text-xl font-extrabold text-white bg-[#720987] p-2 sm:p-3 opacity-90 hover:opacity-100"
+              onclick="scrollToElement('projekt1')">
                 ACTION BUTTON 1
               </button>
-            </a>
           </div>
         </div>
         <!--first-->
         <!-- second -->
         <div class="relative w-1/8 sm:w-80 bg-gradient-to-t from-[#7209B7] flex sm:flex-col justify-center items-center pt-20 px-5 sm:max-w-sm sm:text-center">
-          <div class="sm:-translate-y-10 rounded-full bg-gray-400 flex items-center justify-center font-mono h-24 w-24 px-10 animate-fadeIn sm:animate-none">
+          <div class="sm:-translate-y-10 rounded-full bg-gray-400 flex items-center justify-center font-mono h-24 w-24 px-10 animate-fadeIn sm:animate-none"
+          onclick="scrollToElement('projekt2')">
             <p>GRAPHIC 2</p>
           </div>
-          <div class="sm:-translate-y-16 text-[20px] py-20 px-5 pl-10 sm:pl-0 sm:px-0 animate-slideLeft sm:animate-none text-ellipsis">
+          <div class="sm:-translate-y-16 text-xl py-20 px-5 pl-10 sm:pl-0 sm:px-0 animate-slideLeft sm:animate-none text-ellipsis">
             <p>placeholder text about the topic (projekt 2)...</p>
           </div>
           <div class="pt-4 sm:pt-0"> 
-            <a href="#projekt2">
-              <button class="text-center text-[18px] sm:text-[20px] font-extrabold text-white bg-[#720987] p-2 sm:p-3 opacity-90 hover:opacity-100">
+              <button class="text-center text-lg sm:text-xl font-extrabold text-white bg-[#720987] p-2 sm:p-3 opacity-90 hover:opacity-100">
                 ACTION BUTTON 2
               </button>
-            </a>
           </div>
-        </div>
         </div>
         <!--second-->
         <!-- third -->
         <div class="relative w-1/8 sm:w-80 bg-gradient-to-t from-[#7209B7] flex sm:flex-col justify-center items-center pt-20 px-5 sm:max-w-sm sm:text-center">
-          <div class="sm:-translate-y-10 rounded-full bg-gray-400 flex items-center justify-center font-mono h-24 w-24 px-10 animate-fadeIn sm:animate-none">
+          <div class="sm:-translate-y-10 rounded-full bg-gray-400 flex items-center justify-center font-mono h-24 w-24 px-10 animate-fadeIn sm:animate-none"
+         >
             <p>GRAPHIC 3</p>
           </div>
-          <div class="sm:-translate-y-16 text-[20px] py-20 px-5 pl-10 sm:pl-0 sm:px-0 animate-slideLeft sm:animate-none text-ellipsis">
+          <div class="sm:-translate-y-16 text-xl py-20 px-5 pl-10 sm:pl-0 sm:px-0 animate-slideLeft sm:animate-none text-ellipsis">
             <p>placeholder text about the topic (projekt 3)...</p>
           </div>
-          <div class="pt-4 sm:pt-0"> <!-- Adjust the top padding as needed -->
-            <a href="#projekt3">
-              <button class="text-center text-[18px] sm:text-[20px] font-extrabold text-white bg-[#720987] p-2 sm:p-3 opacity-90 hover:opacity-100">
+          <div class="pt-4 sm:pt-0"> 
+              <button class="text-center text-lg sm:text-xl font-extrabold text-white bg-[#720987] p-2 sm:p-3 opacity-90 hover:opacity-100" onclick="scrollToElement('projekt3')">
                 ACTION BUTTON 3
               </button>
-            </a>
           </div>
         </div>
           <!--third-->
-        </div>
       </div>
       <!--cardsEND-->
 
-        <!--projekt 1-->
+        <!--projekt1-->
         <header class="flex justify-center mb-4 px-3 pt-10">
           <h2
             id="projekt1"
@@ -358,7 +359,9 @@
             vulputate vel leo. Suspendisse quis ipsum
           </p>
         </section>
-        <!--projekt 2-->
+        <!--projekt1END-->
+
+        <!--projekt2-->
         <header class="flex justify-center mb-4 px-3">
           <h2
             id="projekt2"
@@ -414,8 +417,9 @@
             vulputate vel leo. Suspendisse quis ipsum
           </p>
         </section>
+        <!--projekt2END-->
 
-        <!--projekt 3-->
+        <!--projekt3-->
         <header class="flex justify-center mb-4 px-3">
           <h2
             id="projekt3"
@@ -472,6 +476,7 @@
             vulputate vel leo. Suspendisse quis ipsum
           </p>
         </section>
+        <!--projekt3-->
       </div>
     </main>
     <!--mainEND-->
@@ -550,6 +555,7 @@
     </footer>
     <!--footerEND-->
     <script>
+
       //scriptForHamburgerMenu
       function Menu(e) {
         let list = document.querySelector("ul");
@@ -563,10 +569,18 @@
             list.classList.remove("opacity-100"));
       }
 
-      // view a gallery
+
+      // scroll smoothly to an id
+      function scrollToElement(id) {
+        const targetElement = document.getElementById(id);
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+
+      // view a gallery (viewerjs)
       function viewGallery(id) {
         const viewerOptions = {
           toolbar: false,
+          title: false,
         };
 
         const viewer = new Viewer(document.getElementById(id), viewerOptions);
@@ -589,6 +603,7 @@
       }
 
       initGlide();
+
     </script>
   </body>
 </html>
