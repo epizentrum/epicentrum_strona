@@ -83,13 +83,6 @@
       body {
         font-family: "Poppins", sans-serif;
       }
-
-      /* yet to be tested with actual webiste content, might need adjustments */
-      .glide__slide img {
-        height: 300px;
-        width: auto;
-        object-fit: cover;
-      }
     </style>
   </head>
 
@@ -404,7 +397,7 @@
           PROJEKT 2
         </h2>
       </header>
-      <div class="glide animate-fadeIn mb-10 mt-3 align-baseline">
+      <div class="glide animate-fadeIn mb-10 mt-3">
         <div class="glide__track" data-glide-el="track">
           <ul
             class="glide__slides"
@@ -463,13 +456,12 @@
         </h2>
       </header>
       <div class="glide animate-fadeIn mb-10 mt-3">
-        <div
-          class="glide__track"
-          data-glide-el="track"
-          id="gallery3"
-          onclick="viewGallery('gallery3')"
-        >
-          <ul class="glide__slides">
+        <div class="glide__track" data-glide-el="track">
+          <ul
+            class="glide__slides"
+            id="gallery3"
+            onclick="viewGallery('gallery3')"
+          >
             <li class="glide__slide">
               <img src="img/sfi_img1.jpg" />
             </li>
@@ -624,8 +616,8 @@
           type: "carousel",
           focusAt: "center",
           autoplay: 3000,
-          perView: 4,
-          gap: 30,
+          perView: 2,
+          gap: 10,
           keyboard: false,
         };
 
