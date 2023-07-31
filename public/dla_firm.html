@@ -1,8 +1,6 @@
 <!--
   TODO:
-  - image responsiveness
-  - smooth scrolling
-  - gallery gets 3x the images
+  - gallery gets 3x the images - idk the fix
 -->
 <!DOCTYPE html>
 <html lang="en">
@@ -82,9 +80,18 @@
     <!--sliderjs-->
 
     <style>
+
       body {
         font-family: "Poppins", sans-serif;
       }
+
+      /* yet to be tested with actual webiste content, might need adjustments */
+      .glide__slide img {
+        height: 300px; 
+        width: auto; 
+        object-fit: cover; 
+      }
+
     </style>
   </head>
 
@@ -570,20 +577,40 @@
       }
 
 
-      // scroll smoothly to an id
+      // scroll smoothly to a div with given id
       function scrollToElement(id) {
         const targetElement = document.getElementById(id);
         targetElement.scrollIntoView({ behavior: 'smooth' });
     }
 
+    function removeDuplicatesFromNodeList(nodeList) {
+  const arrayFromNodeList = Array.from(nodeList);
+
+  const uniqueArray = [];
+
+  arrayFromNodeList.forEach((element) => {
+
+    if (!uniqueArray.includes(element)) 
+      uniqueArray.push(element);
+  });
+
+
+  const uniqueNodeList = document.createDocumentFragment();
+  uniqueArray.forEach((element) => uniqueNodeList.appendChild(element));
+
+  return uniqueNodeList;
+}
+
       // view a gallery (viewerjs)
       function viewGallery(id) {
         const viewerOptions = {
+          animation: 'fade',
           toolbar: false,
           title: false,
         };
 
         const viewer = new Viewer(document.getElementById(id), viewerOptions);
+        console.log(viewer);
       }
 
       // initalize and configure glidejs
@@ -593,7 +620,8 @@
           focusAt: "center",
           autoplay: 3000,
           startAt: 0,
-          perView: 2
+          perView: 2,
+          keyboard: false
         };
 
         document.querySelectorAll(".glide").forEach((el) => {
