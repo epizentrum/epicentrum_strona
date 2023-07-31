@@ -43,6 +43,11 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
       rel="stylesheet" />
 
+    <!--gliderjs-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@^3.4.1/dist/css/glide.core.min.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide@%5E3.4.1/dist/css/glide.theme.min.css"> 
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+
       <!--TODO: i think it can be solved with tailwind classes-->
 
     <style>
@@ -174,6 +179,7 @@
     <!--main-->
     <main
       class="flex justify-center flex-col items-center py-3 md:mt-8 text-white px-12">
+      
       <div class="py-6 md:w-3/4">
         <header class="flex justify-center">
           <h2
@@ -270,7 +276,6 @@
           <!--third-->
         </div>
       </div>
-      <div>
         <!--projekt 1-->
         <header class="flex justify-center mb-4">
           <h2
@@ -279,15 +284,23 @@
             PROJEKT 1
           </h2>
         </header>
-        <div class="flex justify-center animate-fadeIn">
-          <img
-            class="flex justify-center p-10"
-            style="margin: 0 auto"
-            src="./img/sfi_img1.jpg"
-            alt="Image" />
+        <div class="glide animate-fadeIn mb-10 mt-3">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <img src="img/sfi_img1.jpg">
+              </li>
+              <li class="glide__slide">
+                <img src="img/sfi_img1.jpg">
+              </li>
+              <li class="glide__slide">
+                <img src="img/sfi_img1.jpg">
+              </li>
+            </ul>
+          </div>
         </div>
-        <section class="mb-32 py-3">
-          <p class="text-center text-base font-normal">
+        <section class="px-3">
+          <p class="text-center text-base font-normal mb-10">
             O projekcie 1. Lorem ipsum dolor sit amet, consectetur adipiscing
             elit. Integer non vestibulum elit. Vivamus ornare erat et turpis
             malesuada gravida. Quisque ut euismod leo. Sed dictum, risus et
@@ -315,22 +328,30 @@
           </p>
         </section>
         <!--projekt 2-->
-        <header class="flex justify-center mb-4">
+        <header class="mb-4">
           <h2
             id="projekt2"
             class="text-2xl font-bold py-3 bg-left-bottom bg-gradient-to-r from-pablo-pink via-pablo-purple to-pablo-blue bg-[length:100%_4px] bg-no-repeat">
             PROJEKT 2
           </h2>
         </header>
-        <div class="flex justify-center animate-fadeIn">
-          <img
-            class="flex justify-center p-10"
-            style="margin: 0 auto"
-            src="./img/sfi_img1.jpg"
-            alt="Image" />
+        <div class="glide animate-fadeIn mb-10 mt-3">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <img src="img/sfi_img1.jpg">
+              </li>
+              <li class="glide__slide">
+                <img src="img/sfi_img1.jpg">
+              </li>
+              <li class="glide__slide">
+                <img src="img/sfi_img1.jpg">
+              </li>
+            </ul>
+          </div>
         </div>
-        <section class="mb-32 py-3">
-          <p class="text-center text-base font-normal">
+        <section class="px-3">
+          <p class="text-center text-base font-normal mb-10">
             O projekcie 2. Lorem ipsum dolor sit amet, consectetur adipiscing
             elit. Integer non vestibulum elit. Vivamus ornare erat et turpis
             malesuada gravida. Quisque ut euismod leo. Sed dictum, risus et
@@ -359,23 +380,30 @@
         </section>
 
         <!--projekt 3-->
-
-        <header class="flex justify-center mb-4">
+        <header class="flex justify-center mb-4 px-3">
           <h2
             id="projekt3"
             class="text-2xl font-bold py-3 bg-left-bottom bg-gradient-to-r from-pablo-pink via-pablo-purple to-pablo-blue bg-[length:100%_4px] bg-no-repeat">
             PROJEKT 3
           </h2>
         </header>
-        <div class="flex justify-center animate-fadeIn">
-          <img
-            class="flex justify-center p-10"
-            style="margin: 0 auto"
-            src="./img/sfi_img1.jpg"
-            alt="Image" />
+        <div class="glide animate-fadeIn mb-20">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <img src="img/sfi_img1.jpg">
+              </li>
+              <li class="glide__slide">
+                <img src="img/sfi_img1.jpg">
+              </li>
+              <li class="glide__slide">
+                <img src="img/sfi_img1.jpg">
+              </li>
+            </ul>
+          </div>
         </div>
-        <section class="mb-32 py-3">
-          <p class="text-center text-base font-normal">
+        <section class="py-3">
+          <p class="text-center text-base font-normal mb-10">
             O projekcie 3. Lorem ipsum dolor sit amet, consectetur adipiscing
             elit. Integer non vestibulum elit. Vivamus ornare erat et turpis
             malesuada gravida. Quisque ut euismod leo. Sed dictum, risus et
@@ -402,7 +430,6 @@
             vulputate vel leo. Suspendisse quis ipsum
           </p>
         </section>
-      </div>
     </main>
     <!--mainEND-->
 
@@ -453,10 +480,9 @@
   </div>
 </footer>
 <!--footerEND-->
-    
     <script>
+      //scriptForHamburgerMenu
       function Menu(e) {
-        //scriptForHamburgerMenu
         let list = document.querySelector("ul");
 
         e.name === "menu"
@@ -467,6 +493,26 @@
             list.classList.remove("right-[0px]"),
             list.classList.remove("opacity-100"));
       }
+
+      // initalize and configure glidejs
+      const options = {
+        type: 'carousel',
+        focusAt: 'center',
+        autoplay: 3000,
+        startAt: 0,
+        perView: 2,
+        breakpoints: {
+          1024: {
+            perView: 3
+          },
+        }
+      }
+
+      document.querySelectorAll('.glide').forEach((el) => {
+      let glideInstance = new Glide(el, options);
+      glideInstance.mount();
+  })
+
     </script>
   </body>
 </html>
