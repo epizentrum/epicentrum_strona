@@ -291,7 +291,6 @@
         >
           <div
             class="sm:-translate-y-10 rounded-full bg-gray-400 flex items-center justify-center font-mono h-24 w-24 px-10 animate-fadeIn sm:animate-none"
-            onclick="scrollToElement('projekt2')"
           >
             <p>GRAPHIC 2</p>
           </div>
@@ -302,6 +301,7 @@
           </div>
           <div class="pt-4 sm:pt-0">
             <button
+              onclick="scrollToElement('projekt2')"
               class="text-center text-lg sm:text-xl font-extrabold text-white bg-[#720987] p-2 sm:p-3 opacity-90 hover:opacity-100"
             >
               ACTION BUTTON 2
@@ -610,6 +610,12 @@
         };
 
         const viewer = new Viewer(document.getElementById(id), viewerOptions);
+      }
+
+      // scroll smoothly to a div with given id
+      function scrollToElement(id) {
+        const targetElement = document.getElementById(id);
+        targetElement.scrollIntoView({ behavior: "smooth" });
       }
 
       // initalize and configure glidejs
