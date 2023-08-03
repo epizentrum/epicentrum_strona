@@ -40,7 +40,7 @@ html {
   -moz-tab-size: 4;
   /* 3 */
   -o-tab-size: 4;
-     tab-size: 4;
+  tab-size: 4;
   /* 3 */
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
@@ -79,7 +79,7 @@ Add the correct text decoration in Chrome, Edge, and Safari.
 
 abbr:where([title]) {
   -webkit-text-decoration: underline dotted;
-          text-decoration: underline dotted;
+  text-decoration: underline dotted;
 }
 
 /*
@@ -427,16 +427,16 @@ video {
   --tw-skew-y: 0;
   --tw-scale-x: 1;
   --tw-scale-y: 1;
-  --tw-pan-x:  ;
-  --tw-pan-y:  ;
-  --tw-pinch-zoom:  ;
+  --tw-pan-x: ;
+  --tw-pan-y: ;
+  --tw-pinch-zoom: ;
   --tw-scroll-snap-strictness: proximity;
-  --tw-ordinal:  ;
-  --tw-slashed-zero:  ;
-  --tw-numeric-figure:  ;
-  --tw-numeric-spacing:  ;
-  --tw-numeric-fraction:  ;
-  --tw-ring-inset:  ;
+  --tw-ordinal: ;
+  --tw-slashed-zero: ;
+  --tw-numeric-figure: ;
+  --tw-numeric-spacing: ;
+  --tw-numeric-fraction: ;
+  --tw-ring-inset: ;
   --tw-ring-offset-width: 0px;
   --tw-ring-offset-color: #fff;
   --tw-ring-color: rgb(59 130 246 / 0.5);
@@ -444,24 +444,24 @@ video {
   --tw-ring-shadow: 0 0 #0000;
   --tw-shadow: 0 0 #0000;
   --tw-shadow-colored: 0 0 #0000;
-  --tw-blur:  ;
-  --tw-brightness:  ;
-  --tw-contrast:  ;
-  --tw-grayscale:  ;
-  --tw-hue-rotate:  ;
-  --tw-invert:  ;
-  --tw-saturate:  ;
-  --tw-sepia:  ;
-  --tw-drop-shadow:  ;
-  --tw-backdrop-blur:  ;
-  --tw-backdrop-brightness:  ;
-  --tw-backdrop-contrast:  ;
-  --tw-backdrop-grayscale:  ;
-  --tw-backdrop-hue-rotate:  ;
-  --tw-backdrop-invert:  ;
-  --tw-backdrop-opacity:  ;
-  --tw-backdrop-saturate:  ;
-  --tw-backdrop-sepia:  ;
+  --tw-blur: ;
+  --tw-brightness: ;
+  --tw-contrast: ;
+  --tw-grayscale: ;
+  --tw-hue-rotate: ;
+  --tw-invert: ;
+  --tw-saturate: ;
+  --tw-sepia: ;
+  --tw-drop-shadow: ;
+  --tw-backdrop-blur: ;
+  --tw-backdrop-brightness: ;
+  --tw-backdrop-contrast: ;
+  --tw-backdrop-grayscale: ;
+  --tw-backdrop-hue-rotate: ;
+  --tw-backdrop-invert: ;
+  --tw-backdrop-opacity: ;
+  --tw-backdrop-saturate: ;
+  --tw-backdrop-sepia: ;
 }
 
 ::-webkit-backdrop {
@@ -474,16 +474,16 @@ video {
   --tw-skew-y: 0;
   --tw-scale-x: 1;
   --tw-scale-y: 1;
-  --tw-pan-x:  ;
-  --tw-pan-y:  ;
-  --tw-pinch-zoom:  ;
+  --tw-pan-x: ;
+  --tw-pan-y: ;
+  --tw-pinch-zoom: ;
   --tw-scroll-snap-strictness: proximity;
-  --tw-ordinal:  ;
-  --tw-slashed-zero:  ;
-  --tw-numeric-figure:  ;
-  --tw-numeric-spacing:  ;
-  --tw-numeric-fraction:  ;
-  --tw-ring-inset:  ;
+  --tw-ordinal: ;
+  --tw-slashed-zero: ;
+  --tw-numeric-figure: ;
+  --tw-numeric-spacing: ;
+  --tw-numeric-fraction: ;
+  --tw-ring-inset: ;
   --tw-ring-offset-width: 0px;
   --tw-ring-offset-color: #fff;
   --tw-ring-color: rgb(59 130 246 / 0.5);
@@ -491,24 +491,24 @@ video {
   --tw-ring-shadow: 0 0 #0000;
   --tw-shadow: 0 0 #0000;
   --tw-shadow-colored: 0 0 #0000;
-  --tw-blur:  ;
-  --tw-brightness:  ;
-  --tw-contrast:  ;
-  --tw-grayscale:  ;
-  --tw-hue-rotate:  ;
-  --tw-invert:  ;
-  --tw-saturate:  ;
-  --tw-sepia:  ;
-  --tw-drop-shadow:  ;
-  --tw-backdrop-blur:  ;
-  --tw-backdrop-brightness:  ;
-  --tw-backdrop-contrast:  ;
-  --tw-backdrop-grayscale:  ;
-  --tw-backdrop-hue-rotate:  ;
-  --tw-backdrop-invert:  ;
-  --tw-backdrop-opacity:  ;
-  --tw-backdrop-saturate:  ;
-  --tw-backdrop-sepia:  ;
+  --tw-blur: ;
+  --tw-brightness: ;
+  --tw-contrast: ;
+  --tw-grayscale: ;
+  --tw-hue-rotate: ;
+  --tw-invert: ;
+  --tw-saturate: ;
+  --tw-sepia: ;
+  --tw-drop-shadow: ;
+  --tw-backdrop-blur: ;
+  --tw-backdrop-brightness: ;
+  --tw-backdrop-contrast: ;
+  --tw-backdrop-grayscale: ;
+  --tw-backdrop-hue-rotate: ;
+  --tw-backdrop-invert: ;
+  --tw-backdrop-opacity: ;
+  --tw-backdrop-saturate: ;
+  --tw-backdrop-sepia: ;
 }
 
 ::backdrop {
@@ -521,16 +521,16 @@ video {
   --tw-skew-y: 0;
   --tw-scale-x: 1;
   --tw-scale-y: 1;
-  --tw-pan-x:  ;
-  --tw-pan-y:  ;
-  --tw-pinch-zoom:  ;
+  --tw-pan-x: ;
+  --tw-pan-y: ;
+  --tw-pinch-zoom: ;
   --tw-scroll-snap-strictness: proximity;
-  --tw-ordinal:  ;
-  --tw-slashed-zero:  ;
-  --tw-numeric-figure:  ;
-  --tw-numeric-spacing:  ;
-  --tw-numeric-fraction:  ;
-  --tw-ring-inset:  ;
+  --tw-ordinal: ;
+  --tw-slashed-zero: ;
+  --tw-numeric-figure: ;
+  --tw-numeric-spacing: ;
+  --tw-numeric-fraction: ;
+  --tw-ring-inset: ;
   --tw-ring-offset-width: 0px;
   --tw-ring-offset-color: #fff;
   --tw-ring-color: rgb(59 130 246 / 0.5);
@@ -538,24 +538,24 @@ video {
   --tw-ring-shadow: 0 0 #0000;
   --tw-shadow: 0 0 #0000;
   --tw-shadow-colored: 0 0 #0000;
-  --tw-blur:  ;
-  --tw-brightness:  ;
-  --tw-contrast:  ;
-  --tw-grayscale:  ;
-  --tw-hue-rotate:  ;
-  --tw-invert:  ;
-  --tw-saturate:  ;
-  --tw-sepia:  ;
-  --tw-drop-shadow:  ;
-  --tw-backdrop-blur:  ;
-  --tw-backdrop-brightness:  ;
-  --tw-backdrop-contrast:  ;
-  --tw-backdrop-grayscale:  ;
-  --tw-backdrop-hue-rotate:  ;
-  --tw-backdrop-invert:  ;
-  --tw-backdrop-opacity:  ;
-  --tw-backdrop-saturate:  ;
-  --tw-backdrop-sepia:  ;
+  --tw-blur: ;
+  --tw-brightness: ;
+  --tw-contrast: ;
+  --tw-grayscale: ;
+  --tw-hue-rotate: ;
+  --tw-invert: ;
+  --tw-saturate: ;
+  --tw-sepia: ;
+  --tw-drop-shadow: ;
+  --tw-backdrop-blur: ;
+  --tw-backdrop-brightness: ;
+  --tw-backdrop-contrast: ;
+  --tw-backdrop-grayscale: ;
+  --tw-backdrop-hue-rotate: ;
+  --tw-backdrop-invert: ;
+  --tw-backdrop-opacity: ;
+  --tw-backdrop-saturate: ;
+  --tw-backdrop-sepia: ;
 }
 
 .container {
@@ -910,7 +910,7 @@ video {
 
 .animate-fadeIn {
   -webkit-animation: fadeIn 2s;
-          animation: fadeIn 2s;
+  animation: fadeIn 2s;
 }
 
 @-webkit-keyframes slideLeft {
@@ -939,7 +939,7 @@ video {
 
 .animate-slideLeft {
   -webkit-animation: slideLeft 1s ease-in-out;
-          animation: slideLeft 1s ease-in-out;
+  animation: slideLeft 1s ease-in-out;
 }
 
 @-webkit-keyframes slideRightMobile {
@@ -968,7 +968,7 @@ video {
 
 .animate-slideRightMobile {
   -webkit-animation: slideRightMobile 1s ease-in-out;
-          animation: slideRightMobile 1s ease-in-out;
+  animation: slideRightMobile 1s ease-in-out;
 }
 
 @-webkit-keyframes slideLeftMobile {
@@ -997,7 +997,7 @@ video {
 
 .animate-slideLeftMobile {
   -webkit-animation: slideLeftMobile 1s ease-in-out;
-          animation: slideLeftMobile 1s ease-in-out;
+  animation: slideLeftMobile 1s ease-in-out;
 }
 
 @-webkit-keyframes pulse_2 {
@@ -1022,7 +1022,7 @@ video {
 
 .animate-pulse_2 {
   -webkit-animation: pulse_2 1s cubic-bezier(0.4, 0, 0.6, 1) 1s forwards;
-          animation: pulse_2 1s cubic-bezier(0.4, 0, 0.6, 1) 1s forwards;
+  animation: pulse_2 1s cubic-bezier(0.4, 0, 0.6, 1) 1s forwards;
 }
 
 @-webkit-keyframes pulse_1 {
@@ -1047,7 +1047,7 @@ video {
 
 .animate-pulse_1 {
   -webkit-animation: pulse_1 1s cubic-bezier(0.4, 0, 0.6, 1) 0s forwards;
-          animation: pulse_1 1s cubic-bezier(0.4, 0, 0.6, 1) 0s forwards;
+  animation: pulse_1 1s cubic-bezier(0.4, 0, 0.6, 1) 0s forwards;
 }
 
 @-webkit-keyframes pulse_3 {
@@ -1072,7 +1072,7 @@ video {
 
 .animate-pulse_3 {
   -webkit-animation: pulse_3 1s cubic-bezier(0.4, 0, 0.6, 1) 2s forwards;
-          animation: pulse_3 1s cubic-bezier(0.4, 0, 0.6, 1) 2s forwards;
+  animation: pulse_3 1s cubic-bezier(0.4, 0, 0.6, 1) 2s forwards;
 }
 
 @-webkit-keyframes loading_bar {
@@ -1113,7 +1113,7 @@ video {
 
 .animate-loading_bar {
   -webkit-animation: loading_bar 3s ease forwards;
-          animation: loading_bar 3s ease forwards;
+  animation: loading_bar 3s ease forwards;
 }
 
 .flex-row {
@@ -1162,16 +1162,16 @@ video {
 
 .gap-x-6 {
   -moz-column-gap: 1.5rem;
-       column-gap: 1.5rem;
+  column-gap: 1.5rem;
 }
 
-.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+.space-y-4> :not([hidden])~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
-.space-y-16 > :not([hidden]) ~ :not([hidden]) {
+.space-y-16> :not([hidden])~ :not([hidden]) {
   --tw-space-y-reverse: 0;
   margin-top: calc(4rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(4rem * var(--tw-space-y-reverse));
@@ -1631,7 +1631,7 @@ video {
 
 .no-underline {
   -webkit-text-decoration-line: none;
-          text-decoration-line: none;
+  text-decoration-line: none;
 }
 
 .opacity-0 {
@@ -1817,7 +1817,7 @@ video {
 
   .sm\:animate-fadeInSubsite {
     -webkit-animation: fadeInSubsite 1s ease-in-out;
-            animation: fadeInSubsite 1s ease-in-out;
+    animation: fadeInSubsite 1s ease-in-out;
   }
 
   @-webkit-keyframes slideRight {
@@ -1846,7 +1846,7 @@ video {
 
   .sm\:animate-slideRight {
     -webkit-animation: slideRight 1s ease-in-out;
-            animation: slideRight 1s ease-in-out;
+    animation: slideRight 1s ease-in-out;
   }
 
   @-webkit-keyframes slideLeft {
@@ -1875,7 +1875,7 @@ video {
 
   .sm\:animate-slideLeft {
     -webkit-animation: slideLeft 1s ease-in-out;
-            animation: slideLeft 1s ease-in-out;
+    animation: slideLeft 1s ease-in-out;
   }
 
   .sm\:flex-col {
@@ -2048,7 +2048,7 @@ video {
     justify-content: space-between;
   }
 
-  .md\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
+  .md\:space-y-0> :not([hidden])~ :not([hidden]) {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
@@ -2186,3 +2186,46 @@ video {
   }
 }
 
+/*Kotakt begin*/
+
+.info-grid {
+  background: #111111;
+  color: white;
+  gap: 32px;
+  padding: 58px;
+  display: flex;
+  justify-content: center;
+
+}
+
+.info-section {
+  max-width: 250px;
+  flex: 1 1 0px;
+}
+
+.info-section h1 {
+  font-weight: bold;
+  font-size: large;
+}
+
+.link-icon {
+  cursor: pointer;
+}
+
+.link-icon:hover svg {
+  opacity: 0.7;
+}
+
+@media (max-width: 640px) {
+  .info-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-section {
+    width: 100%;
+  }
+
+}
+
+/*Kotakt end*/
