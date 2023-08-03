@@ -2189,7 +2189,7 @@ video {
 /*Kotakt begin*/
 
 .info-grid {
-  background: black;
+  background: #111111;
   color: white;
   gap: 32px;
   padding: 58px;
